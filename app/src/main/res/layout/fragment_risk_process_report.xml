@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:ignore="SpUsage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding"
+            android:layout_marginTop="@dimen/common_padding"
+            android:layout_marginEnd="@dimen/common_padding"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:background="@drawable/bg_white_corner_10"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/common_padding"
+            android:paddingEnd="@dimen/common_padding">
+
+            <TextView
+                style="@style/style_main_title"
+                android:layout_marginStart="@dimen/common_clear"
+                android:layout_marginEnd="@dimen/common_clear"
+                android:text="@string/string_risk_rectification_state"
+                android:textColor="@color/common_color_text_level_3" />
+
+            <TextView
+                android:id="@+id/risk_process_operation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_half"
+                android:layout_marginBottom="@dimen/common_padding_half"
+                android:textColor="@color/common_color_text"
+                android:textSize="18dp" />
+
+            <TextView
+                style="@style/style_main_title"
+                android:layout_marginStart="@dimen/common_clear"
+                android:layout_marginEnd="@dimen/common_clear"
+                android:text="@string/string_risk_description"
+                android:textColor="@color/common_color_text_level_3" />
+
+            <EditText
+                android:id="@+id/risk_description"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:background="@drawable/bg_ddd_corner_10_hollow"
+                android:gravity="start"
+                android:hint="@string/string_risk_description_hint"
+                android:maxLength="50"
+                android:padding="@dimen/common_padding"
+                android:textColor="@color/common_color_text_level_3"
+                android:textColorHint="@color/common_color_hint"
+                android:textSize="15dp"
+                tools:ignore="Autofill,TextFields" />
+
+            <include layout="@layout/divider_line_layout" />
+
+            <TextView
+                style="@style/style_main_title"
+                android:layout_marginStart="@dimen/common_clear"
+                android:layout_marginLeft="@dimen/common_clear"
+                android:background="@drawable/common_bg_underline"
+                android:text="@string/string_risk_img"
+                android:textColor="@color/common_color_text_level_3"
+                android:textSize="15dp" />
+
+            <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                android:id="@+id/risk_show_img_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_padding_half" />
+
+            <TextView
+                style="@style/style_main_title"
+                android:layout_marginStart="@dimen/common_clear"
+                android:layout_marginLeft="@dimen/common_clear"
+                android:background="@drawable/common_bg_underline"
+                android:text="@string/string_risk_video"
+                android:textColor="@color/common_color_text_level_3"
+                android:textSize="15dp" />
+
+            <include
+                layout="@layout/item_img_layout"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="@dimen/common_padding" />
+
+            <TextView
+                style="@style/style_main_title"
+                android:layout_marginStart="@dimen/common_clear"
+                android:layout_marginLeft="@dimen/common_clear"
+                android:background="@drawable/common_bg_underline"
+                android:text="@string/string_risk_voice"
+                android:textColor="@color/common_color_text_level_3"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="@dimen/common_padding"
+                tools:ignore="ContentDescription">
+
+                <ImageView
+                    android:id="@+id/item_voice_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@mipmap/ic_can_add_file" />
+
+                <ImageView
+                    android:id="@+id/item_voice_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_padding_half"
+                    android:src="@mipmap/ic_linkman_add_delete"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

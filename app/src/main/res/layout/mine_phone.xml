@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/common_text_input_layout_style">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_phone"
+                style="@style/text_input_style_item_et"
+                android:hint="@string/title_mobile_phone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/common_text_input_layout_style">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_new_modify_mailbox"
+                style="@style/text_input_style_item_et"
+                android:hint="@string/new_phone_number"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/common_text_input_layout_style">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_confirm_mailbox"
+                style="@style/text_input_style_item_et"
+                android:hint="@string/confirm_phone"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/text_least"
+            android:text="@string/device_list" />
+
+        <ImageView
+            style="@style/img_to_right"
+            android:src="@mipmap/icon_to_right" />
+
+    </RelativeLayout>
+    <View
+        style="@style/line_f0_1px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_place_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/text_least"
+            android:text="@string/place_list" />
+
+        <ImageView
+            style="@style/img_to_right"
+            android:src="@mipmap/icon_to_right" />
+    </RelativeLayout>
+    <View
+        style="@style/line_f0_1px" />
+    <RelativeLayout
+        android:id="@+id/rl_area_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/text_least"
+            android:text="@string/area_list" />
+
+        <ImageView
+            style="@style/img_to_right"
+            android:src="@mipmap/icon_to_right" />
+    </RelativeLayout>
+    <View
+        style="@style/line_f0_1px" />
+    <RelativeLayout
+        android:id="@+id/rl_infrastructure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/text_least"
+            android:text="@string/infrastructure" />
+
+        <TextView
+            style="@style/text_item_tite"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/card_margin"
+            android:layout_toLeftOf="@+id/iv_to_be_continued"
+            android:text="@string/coming_soon" />
+
+        <ImageView
+            android:id="@+id/iv_to_be_continued"
+            style="@style/img_to_right"
+            android:src="@mipmap/icon_to_right" />
+    </RelativeLayout>
+
+</LinearLayout>

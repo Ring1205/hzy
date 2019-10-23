@@ -1,0 +1,1 @@
+include ':app', ':common', ':map', ':SRouter', ':zxing', ':MPChartLib', ':startup', ':wifi', ':PhotoPicker'

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/reset_email_til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/common_text_input_layout_style">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/reset_email_et_email"
+                style="@style/text_input_style_item_et"
+                android:hint="@string/e_mail_address"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bg_underline"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reset_email_til_captcha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                app:hintTextAppearance="@style/common_signin_text_input_layout_style">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/reset_email_et_captcha"
+                    style="@style/start_up_style_item_et"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/start_up_hint_enter_captcha"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--展示图形验证码-->
+            <ImageView
+                android:id="@+id/reset_email_img_captcha"
+                android:layout_width="90dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bg_underline"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reset_email_til_verification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                app:hintTextAppearance="@style/common_signin_text_input_layout_style">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/reset_email_et_verification"
+                    style="@style/start_up_style_item_et"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/start_up_hint_enter_verification"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--展示图形验证码-->
+            <Button
+                android:id="@+id/reset_email_btn_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/common_bg_corner_enable_16"
+                android:text="@string/start_up_string_get_verification"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

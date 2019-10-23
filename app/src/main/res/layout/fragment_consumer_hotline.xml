@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <include layout="@layout/toolbar" />
+    <android.support.v7.widget.CardView
+        style="@style/style_item_delete_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        tools:ignore="RtlSymmetry,SpUsage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/text_level"
+        android:paddingRight="@dimen/text_level"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/consumer_hotline_call"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/common_bg_underline"
+            android:gravity="center_vertical"
+            android:text="@string/title_hotline_number"
+            android:textColor="@color/common_color_text"
+            android:textSize="@dimen/text_16sp"
+            android:drawableRight="@mipmap/ic_call"
+            android:paddingRight="@dimen/common_padding" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_hotline_operating_hours"
+            android:textColor="@color/common_color_text"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

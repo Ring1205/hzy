@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/card_margin">
+
+                <TextView
+                    android:id="@+id/project_detail_title"
+                    style="@style/text_tite_small"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_level"
+                    android:text="@string/string_project_base_information" />
+
+                <View
+                    style="@style/line_blue_vertical"
+                    android:layout_marginLeft="@dimen/card_pading" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_project_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_padding"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_type_project_name"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_name"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_type"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_type"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_region"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_region"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_address"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_address"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_monitoring_range"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_monitoring_range"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_charger"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_charger"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_charger_phone"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_charger_phone"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_manager"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_manager"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_manager_phone"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_manager_phone"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_project_notification_mode"
+                    android:textColor="@color/common_color_hint"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_project_notice_voice"
+                        style="@style/CustomAllCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_padding_half"
+                        android:layout_weight="1"
+                        android:text="@string/string_project_notification_voice"
+                        android:textSize="13dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_project_notice_message"
+                        style="@style/CustomAllCheckboxTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_padding_half"
+                        android:layout_weight="1"
+                        android:text="@string/string_project_notification_message"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/card_margin">
+
+                <TextView
+                    android:id="@+id/project_detail_base_title"
+                    style="@style/text_tite_small"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_level"
+                    android:text="@string/string_project_base_detail" />
+
+                <View
+                    style="@style/line_blue_vertical"
+                    android:layout_marginLeft="@dimen/card_pading" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_project_base_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_padding"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_project_show_name"
+                        style="@style/text_input_style_item_et"
+                        android:hint="@string/string_project_name"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_project_logo"
+                    android:textColor="@color/common_color_hint"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/img_project_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

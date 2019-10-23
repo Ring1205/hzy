@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/point_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/style_item_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_top_margin"
+                android:layout_marginRight="@dimen/text_top_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_margin"
+                        android:layout_marginTop="@dimen/text_tite"
+                        android:layout_marginRight="@dimen/card_margin"
+                        app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edit_title_patrol_task"
+                            style="@style/text_input_style_item_et"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:hint="@string/patrol_task"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_margin"
+                        android:layout_marginRight="@dimen/card_margin"
+                        app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edit_title_inspectors"
+                            style="@style/text_input_style_item_et"
+                            android:focusable="false"
+                            android:hint="@string/inspectors"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_margin"
+                        android:layout_marginRight="@dimen/card_margin"
+                        app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edit_title_patrol_progress"
+                            style="@style/text_input_style_item_et"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:hint="@string/patrol_progress"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/card_margin"
+                        android:layout_marginRight="@dimen/card_margin"
+                        app:hintTextAppearance="@style/common_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edit_title_task_time_limit"
+                            style="@style/text_input_style_item_et"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:hint="@string/task_time_limit"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/rl_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    style="@style/style_item_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_top_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/search_list_title"
+                                style="@style/style_main_title"
+                                android:drawableTint="@color/colorAccent"
+                                android:text="@string/inspection_point" />
+
+                            <TextView
+                                android:id="@+id/tv_stick"
+                                style="@style/text_item_tite"
+                                android:layout_alignParentRight="true"
+                                android:paddingTop="@dimen/card_pading"
+                                android:paddingRight="@dimen/text_margin"
+                                android:text="@string/stick" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/base_custom_pager" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

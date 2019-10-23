@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/scan_nfc"
+        android:icon="@mipmap/ic_task_nfc"
+        android:title="@string/scan_nfc"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/scan_qr_code"
+        android:icon="@mipmap/ic_task_qr_code"
+        android:title="@string/scan_qr_code"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ezy.ui.layout.LoadingLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/text_margin"
+                android:paddingRight="@dimen/text_margin">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_point_name"
+                        style="@style/text_input_edit"
+                        android:maxLength="40"
+                        android:hint="@string/hint_enter_names" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_point_location"
+                        style="@style/text_input_edit"
+                        android:hint="@string/hint_point_location" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_clock_area"
+                        style="@style/text_input_edit"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/hint_clock_area" />
+
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="@dimen/weight"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_date_of_manufacture"
+                            style="@style/text_input_edit"
+                            android:drawableRight="@drawable/ic_today_black_24dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/hint_date_of_manufacture" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="@dimen/weight"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_devices_count"
+                            style="@style/text_input_edit"
+                            android:drawableRight="@drawable/ic_edit_black_24dp"
+                            android:hint="@string/devices_count"
+                            android:inputType="number"
+                            android:text="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_scan_tag_id"
+                            style="@style/text_input_edit"
+                            android:drawableRight="@drawable/ic_fullscreen_black_24dp"
+                            android:focusable="false"
+                            android:hint="@string/hint_scan_tag_id" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_clock_in_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_clock_in_type"
+                            android:drawableRight="@drawable/ic_arrow_drop_down"
+                            style="@style/text_input_edit"
+                            android:focusable="false"
+                            android:hint="@string/hint_clock_in_type" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_select_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_select_type"
+                            android:drawableRight="@drawable/ic_arrow_drop_down"
+                            style="@style/text_input_edit"
+                            android:focusable="false"
+                            android:hint="@string/hint_select_type" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_facility_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/common_hardcore_text_input_layout_style">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_facility_type"
+                            style="@style/text_input_edit"
+                            android:focusable="false"
+                            android:drawableRight="@drawable/ic_arrow_drop_down"
+                            android:hint="@string/hint_facility_type" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_patrol_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_patrol_project"
+                    android:layout_marginLeft="@dimen/card_pading"
+                    android:layout_marginRight="@dimen/card_pading" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </ezy.ui.layout.LoadingLayout>
+</LinearLayout>

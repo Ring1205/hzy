@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+        android:id="@+id/history_rv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/common_bg_f0_hollow"
+        android:paddingStart="@dimen/dialog_radius"
+        tools:ignore="RtlSymmetry"
+        android:paddingLeft="@dimen/dialog_radius" />
+</LinearLayout>

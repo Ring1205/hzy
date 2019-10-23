@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_padding_half"
+        android:background="@drawable/bg_white_corner_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popup_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="13dp"
+            android:text="@string/device_photograph"
+            android:textColor="@color/common_main_color" />
+
+        <TextView
+            android:id="@+id/popup_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="13dp"
+            android:text="@string/popup_album"
+            android:textColor="@color/common_main_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/popup_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding_half"
+        android:layout_marginEnd="@dimen/common_padding_half"
+        android:layout_marginBottom="@dimen/common_padding_half"
+        android:background="@drawable/bg_white_corner_10"
+        android:gravity="center_horizontal"
+        android:padding="13dp"
+        android:text="@string/cancel"
+        android:textColor="@color/common_main_color" />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View style="@style/line_f0_1px"
+        android:layout_marginBottom="@dimen/card_pading"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                style="@style/text_item_tite_level"
+                android:text="@string/ellipsis" />
+
+            <TextView
+                android:id="@+id/tv_device_number"
+                style="@style/text_item_tite_level"
+                android:text="@string/ellipsis" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_install_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/common_color_text"
+            android:text="@string/device_install_details"
+            android:textColor="@color/color_white_fa"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:text="@string/title_device_system" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_system"
+                style="@style/text_input_edit"
+                android:focusable="false"
+                android:hint="@string/fire_detection_and_alarm_system" />
+
+            <com.zxycloud.common.widget.DropdownButton
+                android:id="@+id/ddb_belong"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_height"
+                android:layout_alignBottom="@+id/til_belong_to"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:tint="@color/colorImage" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/card_pading"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:text="@string/title_installation" />
+
+        <EditText
+            android:id="@+id/et_belong"
+            style="@style/text_input_edit"
+            android:hint="@string/hint_null_lcation" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_base" />
+
+    <FrameLayout
+        android:id="@+id/fl_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/card_margin"
+        android:paddingRight="@dimen/card_margin"
+        android:paddingBottom="@dimen/mine_head_height"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_photo"
+            style="@style/button_page"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/card_pading"
+            android:layout_width="@dimen/weight"
+            android:text="@string/photo_album" />
+        <Button
+            android:id="@+id/btn_light"
+            style="@style/button_page"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/card_pading"
+            android:layout_width="@dimen/weight"
+            android:text="@string/flash_light" />
+        <Button
+            android:id="@+id/btn_input"
+            style="@style/button_page"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/card_pading"
+            android:layout_width="@dimen/weight"
+            android:text="@string/manual_input" />
+
+    </LinearLayout>
+
+</RelativeLayout>

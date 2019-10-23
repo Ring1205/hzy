@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c3c43</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ef7133</color>
+
+    <color name="colorLine">#f0f0f0</color>
+    <color name="colorHite">#999999</color>
+    <color name="colorItem">#716F76</color>
+    <color name="colorTite">#333333</color>
+    <color name="colorLineCB">#cbcbcb</color>
+    <color name="colorLineC9">#c9c9c9</color>
+    <color name="colorLineE6">#e6e6e6</color>
+    <color name="colorImage">#393943</color>
+
+    <color name="color_gray_text">#9A9A9A</color>
+    <color name="color_state_fire">#ED4848</color>
+    <color name="color_state_prefire">#EF7133</color>
+    <color name="color_state_fault">#F7BE35</color>
+    <color name="color_state_offline">#999999</color>
+    <color name="color_state_normal">#88B04B</color>
+    <color name="color_state_event">#35B5F7</color>
+    <color name="color_red_button">#FF4646</color>
+    <color name="color_blue_location">#00B6F9</color>
+    <color name="color_ddd">#DDD</color>
+    <color name="color_white_fa">#fafafa</color>
+    <color name="color_gray_img">#737373</color>
+    <color name="color_gray_back">#EFEFF4</color>
+    <color name="color_text_submit">#f39566</color>
+
+    <!-- 单位/场所/设备状态 -->
+    <!--火警、启动、监管、反馈（#ed4848）-->
+    <!--预警（#ef7133）-->
+    <!--故障、屏蔽（#f7be35）-->
+    <!--正常（#88b04b）-->
+    <!--离线（#999999）-->
+    <color name="fire">#ed4848</color>
+    <color name="warn">#ef7133</color>
+    <color name="fault">#f7be35</color>
+    <color name="normal">#88b04b</color>
+    <color name="off_line">#999999</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gary">#898989</color>
+    <color name="blue">#4b9ffc</color>
+    <color name="red">#e51c23</color>
+    <color name="black">#393943</color>
+    <color name="lightBlue">#0079FF</color>
+    <color name="darkGrey"> #C0C0C0</color>
+</resources>

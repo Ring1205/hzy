@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zxycloud.common.widget.LCardView
+        android:id="@+id/lcv_head"
+        style="@style/lcv_search_style"
+        app:cardBackgroundColor="@android:color/white"
+        app:cornerRadius="17dp"
+        app:shadowColor="@android:color/black"
+        app:shadowFluidShape="linear"
+        app:shadowSize="@dimen/button_margin"
+        app:shadowStartAlpha="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/device_search_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:textSize="14dp"
+                tools:ignore="Autofill,RtlSymmetry,SpUsage,TextFields" />
+
+            <ImageView
+                android:id="@+id/device_clear_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:src="@mipmap/ic_delete_text"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="@dimen/common_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_padding_half"
+                android:layout_marginBottom="@dimen/common_padding_half"
+                android:background="@color/divider_line_color" />
+
+            <TextView
+                android:id="@+id/device_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:drawablePadding="@dimen/common_padding_half"
+                android:gravity="center"
+                android:paddingStart="@dimen/common_padding_half"
+                android:paddingEnd="@dimen/common_padding_half"
+                android:text="@string/common_string_all" />
+        </LinearLayout>
+    </com.zxycloud.common.widget.LCardView>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ezy.ui.layout.LoadingLayout
+            android:id="@+id/load_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                android:id="@+id/list_rv"
+                style="@style/recycler_style" />
+        </ezy.ui.layout.LoadingLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

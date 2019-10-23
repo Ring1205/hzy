@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/ll_pop"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/main_reflect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/recognizing_reflect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tips_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/audio_rec"
+                    android:gravity="center"
+                    android:textColor="#3e3e3e"
+                    android:textSize="22sp" />
+
+                <com.zxycloud.common.widget.ASRDigitalDialog.SDKAnimationView
+                    android:id="@+id/voicewave_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <com.zxycloud.common.widget.ASRDigitalDialog.SDKProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/speak_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:text="@string/start"
+                    android:background="#4997EF"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_btn"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cancel_text_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#F4F4F4"
+                        android:text="@string/cancel"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/retry_text_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#4997EF"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:text="@string/play"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

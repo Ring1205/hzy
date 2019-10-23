@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLine"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <include layout="@layout/toolbar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ezy.ui.layout.LoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/place_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/style_item_card_view"
+                        android:layout_marginLeft="@dimen/text_top_margin"
+                        android:layout_marginTop="@dimen/text_top_margin"
+                        android:layout_marginRight="@dimen/text_top_margin">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/iv_place_state"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/text_margin"
+                                        android:src="@mipmap/ic_task_dns" />
+
+                                    <TextView
+                                        android:id="@+id/tv_place_title"
+                                        style="@style/style_item_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="@dimen/common_padding"
+                                        android:layout_marginRight="@dimen/common_padding"
+                                        android:layout_toLeftOf="@+id/iv_place_state"
+                                        android:textSize="@dimen/text_18sp" />
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/common_padding"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_place_project"
+                                        style="@style/area_detail_content"
+                                        android:layout_marginTop="@dimen/text_top_margin"
+                                        android:drawableLeft="@mipmap/ic_item_project_name" />
+
+                                    <TextView
+                                        android:id="@+id/tv_place_address"
+                                        style="@style/area_detail_content"
+                                        android:drawableLeft="@mipmap/ic_item_address" />
+
+                                    <TextView
+                                        android:id="@+id/tv_place_admin"
+                                        style="@style/area_detail_content"
+                                        android:drawableLeft="@mipmap/ic_manager_name" />
+
+                                    <TextView
+                                        android:id="@+id/tv_place_phone"
+                                        style="@style/area_detail_content"
+                                        android:drawableLeft="@mipmap/ic_manager_phone" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/place_view_device"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/common_line_height"
+                                        android:layout_marginStart="@dimen/common_padding"
+                                        android:layout_marginEnd="@dimen/common_padding"
+                                        android:background="@color/colorLineC9" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="44dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tv_device_count"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/common_padding"
+                                            android:layout_weight="1"
+                                            android:text="@string/title_contacts"
+                                            android:textColor="@color/colorHite" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/common_padding"
+                                            android:text="@string/examine"
+                                            android:textColor="@color/common_main_color" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_add_device"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <View style="@style/line_f0_1px" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:drawableLeft="@drawable/ic_add_circle_outline_black_24dp"
+                                            android:drawablePadding="@dimen/text_top_margin"
+                                            android:gravity="center"
+                                            android:text="@string/home_add_device"
+                                            android:textColor="@color/color_gray_text" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <FrameLayout
+                        android:id="@+id/fl_device_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </ezy.ui.layout.LoadingLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

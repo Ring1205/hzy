@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_least"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/common_padding"
+        android:paddingBottom="30dp">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/text_least"
+            android:text="@string/title_profile_picture" />
+
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/mine_iv_head"
+            android:src="@mipmap/ic_mine_header" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_login_id" />
+
+        <EditText
+            android:id="@+id/edit_login_id"
+            style="@style/edit_item"
+            android:hint="@string/login_account" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_position" />
+
+        <EditText
+            android:id="@+id/edit_position"
+            style="@style/edit_item"
+            android:hint="@string/your_position" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:text="@string/title_user_name" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/edit_item"
+            android:layout_weight="1"
+            android:background="@drawable/bg_fff_corner"
+            android:hint="@string/your_name"
+            android:padding="@dimen/common_padding_half" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_sex" />
+
+        <EditText
+            android:id="@+id/edit_sex"
+            style="@style/edit_item"
+            android:hint="@string/your_gender" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_birthday" />
+
+        <EditText
+            android:id="@+id/edit_birthday"
+            style="@style/edit_item"
+            android:hint="@string/your_birthday" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:text="@string/title_mobile_phone" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/edit_item"
+            android:layout_weight="1"
+            android:background="@drawable/bg_fff_corner"
+            android:hint="@string/your_phone_number"
+            android:padding="@dimen/common_padding_half" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_item_title_level"
+            android:layout_width="56dp"
+            android:text="@string/title_email_address" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/edit_item"
+            android:layout_weight="1"
+            android:background="@drawable/bg_fff_corner"
+            android:hint="@string/e_mail_address"
+            android:padding="@dimen/common_padding_half" />
+    </LinearLayout>
+</LinearLayout>

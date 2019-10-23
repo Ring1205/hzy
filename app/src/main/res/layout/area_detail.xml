@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLine"
+    tools:ignore="SpUsage">
+
+    <include layout="@layout/toolbar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ezy.ui.layout.LoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/place_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    style="@style/style_item_card_view"
+                    android:layout_marginLeft="@dimen/text_top_margin"
+                    android:layout_marginTop="@dimen/text_top_margin"
+                    android:layout_marginRight="@dimen/text_top_margin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_place_title"
+                                style="@style/style_item_text"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/common_padding"
+                                android:layout_marginRight="@dimen/common_padding"
+                                android:textSize="@dimen/text_18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/common_padding"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/tv_area_project"
+                                    android:drawableLeft="@mipmap/ic_item_project_name"
+                                    style="@style/area_detail_content" />
+
+                                <TextView
+                                    android:id="@+id/tv_area_address"
+                                    style="@style/area_detail_content"
+                                    android:drawableLeft="@mipmap/ic_item_region"/>
+
+                                <TextView
+                                    android:id="@+id/tv_area_admin"
+                                    android:drawableLeft="@mipmap/ic_manager_name"
+                                    style="@style/area_detail_content" />
+
+                                <TextView
+                                    android:id="@+id/tv_area_phone"
+                                    android:drawableLeft="@mipmap/ic_manager_phone"
+                                    style="@style/area_detail_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_place_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <View style="@style/line_f0_1px" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_add_place"
+                                        android:layout_width="@dimen/weight"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:drawableLeft="@drawable/ic_add_circle_outline_black_24dp"
+                                            android:drawablePadding="@dimen/text_top_margin"
+                                            android:gravity="center"
+                                            android:text="@string/add_place"
+                                            android:textColor="@color/color_gray_text" />
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:id="@+id/view_line_1px"
+                                        style="@style/line_vertical_c9"
+                                        android:layout_marginTop="@dimen/button_margin"
+                                        android:layout_marginBottom="@dimen/button_margin" />
+
+                                    <RelativeLayout
+                                        android:id="@+id/rl_add_area"
+                                        android:layout_width="@dimen/weight"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:drawableLeft="@drawable/ic_add_circle_outline_black_24dp"
+                                            android:drawablePadding="@dimen/text_top_margin"
+                                            android:gravity="center"
+                                            android:text="@string/home_add_area"
+                                            android:textColor="@color/color_gray_text" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <FrameLayout
+                    android:id="@+id/fl_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </ezy.ui.layout.LoadingLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout></LinearLayout>

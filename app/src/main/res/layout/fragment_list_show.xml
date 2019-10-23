@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/toolbar_vs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_device_system"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/common_padding"
+        android:layout_marginEnd="@dimen/common_padding"
+        android:background="@drawable/common_bg_underline"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/common_main_color"
+        android:textSize="14dp"
+        android:visibility="gone"
+        tools:ignore="SpUsage" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/include_classics_header" />
+        <ezy.ui.layout.LoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                android:id="@+id/list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ezy.ui.layout.LoadingLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

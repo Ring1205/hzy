@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLine"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_classics_header" />
+
+        <ezy.ui.layout.LoadingLayout
+            android:id="@+id/load_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                android:id="@+id/record_rv"
+                style="@style/recycler_style" />
+        </ezy.ui.layout.LoadingLayout>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

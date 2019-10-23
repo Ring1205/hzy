@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/start_up_bg_start"
+    tools:context=".ui.StartActivity"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/start_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/start_up_bg_logo" />
+
+    <ImageView
+        android:id="@+id/start_nofire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bg_safe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@mipmap/start_up_ic_nofire" />
+
+    <ImageView
+        android:id="@+id/bg_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bg_mascot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_padding"
+        android:src="@mipmap/start_up_bg_safe" />
+
+    <ImageView
+        android:id="@+id/bg_mascot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@mipmap/start_up_bg_mascot" />
+</RelativeLayout>

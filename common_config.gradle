@@ -1,0 +1,56 @@
+project.ext {
+    // java 语言相关
+    javaVersion = 8
+    javaMaxHeapSize = '4G'
+
+    // Android编译版本相关
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    minSdkVersion = 15
+    targetSdkVersion = 27
+    versionCode = 1
+    versionName = "1.0.0"
+
+    testRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+    // 混淆相关
+    minifyEnable = true
+    shrinkResEnable = minifyEnable
+
+    // JDK兼容版本
+    sourceCompatibility = this.&getJavaVersion()
+    targetCompatibility = this.&getJavaVersion()
+
+    dependencies = [
+            appCompat       : 'com.android.support:appcompat-v7:28.0.0',
+            support         : 'com.android.support:support-v4:28.0.0',
+            testRunner      : 'com.android.support.test:runner:1.0.2',
+            testEspresso    : 'com.android.support.test.espresso:espresso-core:3.0.2',
+            junit           : 'junit:junit:4.12',
+            retrofit        : 'com.squareup.retrofit2:retrofit:2.4.0',
+            rxjava          : 'io.reactivex.rxjava2:rxjava:2.1.12',
+            rxandroid       : 'io.reactivex.rxjava2:rxandroid:2.0.2',
+            retrofit2adapter: 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
+            retrofit2gson   : 'com.squareup.retrofit2:converter-gson:2.4.0',
+            gson            : 'com.google.code.gson:gson:2.8.2',
+            urlconnection   : 'com.squareup.okhttp3:okhttp-urlconnection:3.11.0',
+            design          : 'com.android.support:design:28.0.0',
+            glide           : 'com.github.bumptech.glide:glide:4.6.1'
+    ]
+}
+
+def getJavaVersion() {
+    switch (project.ext.javaVersion) {
+        case "6":
+            return JavaVersion.VERSION_1_6
+
+        case "7":
+            return JavaVersion.VERSION_1_7
+
+        case "8":
+            return JavaVersion.VERSION_1_8
+
+        default:
+            return JavaVersion.VERSION_1_6
+    }
+}

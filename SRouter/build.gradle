@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        lintOptions {
+            // true--错误发生后停止gradle构建
+            abortOnError false
+            //  true--所有正式版构建执行规则生成崩溃的lint检查，如果有崩溃问题将停止构建
+            checkReleaseBuilds false
+        }
+    }
+}
+
+dependencies {
+    implementation project.ext.dependencies.appCompat
+    api 'com.android.support:multidex:1.0.3'
+}
+
+repositories {
+    mavenCentral()
+}

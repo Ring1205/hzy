@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/common_padding"
+    android:paddingEnd="@dimen/common_padding"
+    tools:ignore="SpUsage">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/app_name"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:textColor="@color/common_color_text"
+        android:textSize="17dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingTop="40dp"
+        android:text="@string/us_info"
+        android:textColor="@color/common_color_text"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/about_us_check_new_version"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/common_bg_corner_main_22"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="@string/check_new_version"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/about_us_current_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding"
+        android:gravity="center"
+        android:text="@string/current_version"
+        android:textColor="@android:color/black"
+        android:textSize="12dp" />
+</LinearLayout>

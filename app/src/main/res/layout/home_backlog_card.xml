@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    style="@style/style_item_card_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/text_tite_small"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_centerVertical="true"
+                android:text="@string/home_backlog"/>
+
+            <View
+                android:layout_marginLeft="@dimen/weight"
+                style="@style/line_blue_vertical" />
+
+            <View
+                android:layout_marginTop="@dimen/bottom_height"
+                style="@style/line_e6_1px" />
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/text_least"
+            android:layout_marginBottom="@dimen/text_least"
+            android:paddingTop="@dimen/line_3dp"
+            android:paddingBottom="@dimen/line_3dp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:text="@string/home_backlog"
+            android:background="@drawable/bg_blue_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/text_item_start"
+            android:layout_marginLeft="@dimen/card_pading"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:text="@string/ellipsis"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/card_pading"
+    android:paddingLeft="@dimen/text_tite">
+
+    <ImageView
+        android:id="@+id/iv_pro_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_point_warn" />
+
+    <TextView
+        android:id="@+id/tv_task_type"
+        style="@style/text_item_tite_level"
+        android:layout_width="@dimen/weight"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_weight="1"
+        android:textColor="@color/colorTite" />
+
+    <TextView
+        android:id="@+id/tv_task_state"
+        style="@style/text_item_tite_level"
+        android:layout_width="wrap_content"
+        android:gravity="right"/>
+
+</LinearLayout>

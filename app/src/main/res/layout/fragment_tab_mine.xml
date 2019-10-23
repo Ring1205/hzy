@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_head_height">
+
+        <ImageView
+            android:id="@+id/mine_header"
+            style="@style/mine_iv_head"
+            android:src="@mipmap/user_head" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/mine_header">
+
+            <TextView
+                android:id="@+id/tv_mine_name"
+                style="@style/text_item_start" />
+
+            <TextView
+                android:id="@+id/tv_mine_telephone"
+                style="@style/text_item_end"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_f0_1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height">
+
+        <RelativeLayout
+            android:id="@+id/rl_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/text_level"
+            android:layout_toLeftOf="@+id/line_vertical">
+
+            <TextView
+                style="@style/text_item_tite"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableLeft="@mipmap/ic_password"
+                android:drawablePadding="@dimen/text_top_margin"
+                android:text="@string/change_password" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_vertical"
+            android:layout_width="@dimen/line_1px"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/text_level"
+            android:background="@color/colorLineC9" />
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_mailbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/text_level"
+            android:layout_toRightOf="@+id/line_vertical">
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/text_item_tite"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/ic_email"
+                android:drawablePadding="@dimen/text_top_margin"
+                android:text="@string/modify_mailbox" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_common_problem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_marginTop="@dimen/text_least"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_item_tite_level"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_problem"
+                android:drawablePadding="@dimen/text_least"
+                android:text="@string/common_problem" />
+
+            <ImageView
+                style="@style/img_to_right"
+                android:src="@mipmap/icon_to_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/line_f0_1px"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_safety_fire_knowledge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_item_tite_level"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_knowledge"
+                android:drawablePadding="@dimen/text_least"
+                android:text="@string/safety_fire_knowledge" />
+
+            <ImageView
+                style="@style/img_to_right"
+                android:src="@mipmap/icon_to_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_consumer_hotline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_item_tite_level"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_hotline"
+                android:drawablePadding="@dimen/text_least"
+                android:text="@string/consumer_hotline" />
+
+            <ImageView
+                style="@style/img_to_right"
+                android:src="@mipmap/icon_to_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/line_f0_1px"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_service_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_item_tite_level"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_service_agreement"
+                android:drawablePadding="@dimen/text_least"
+                android:text="@string/service_agreement" />
+
+            <ImageView
+                style="@style/img_to_right"
+                android:src="@mipmap/icon_to_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_switch_project"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_switch"
+                style="@style/text_item_tite_level"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_switch_project"
+                android:drawablePadding="@dimen/text_least"
+                android:text="@string/switch_project" />
+
+            <TextView
+                android:id="@+id/tv_chosen_project"
+                style="@style/text_item_tite"
+                android:layout_toRightOf="@+id/tv_switch"
+                android:layout_centerVertical="true"
+                android:gravity="center|right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_toLeftOf="@+id/iv_switch_project"
+                android:text="@string/all_project" />
+
+            <ImageView
+                android:id="@+id/iv_switch_project"
+                style="@style/img_to_right"
+                android:src="@mipmap/icon_to_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <View
+                style="@style/line_f0_1px"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_item_tite_level"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_about_us"
+                android:drawablePadding="@dimen/text_least"
+                android:text="@string/about_us" />
+
+            <ImageView
+                style="@style/img_to_right"
+                android:src="@mipmap/icon_to_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

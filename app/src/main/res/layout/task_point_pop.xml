@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_btn"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                style="@style/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_margin"
+                android:text="@string/submit_error_message" />
+
+            <ImageView
+                android:id="@+id/iv_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/button_margin"
+                android:src="@mipmap/common_ic_title_finish" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_note"
+            style="@style/edit_comment"
+            android:focusable="false"
+            android:enabled="false"
+            android:hint="@string/hint_descriptor" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_add_accessory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingLeft="@dimen/card_margin"
+            android:paddingBottom="@dimen/button_margin"
+            android:paddingRight="@dimen/card_margin" />
+    </LinearLayout>
+
+</RelativeLayout>

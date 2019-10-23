@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="common_state_array">
+        <item>@string/common_string_all</item>
+        <item>@string/string_state_normal</item>
+        <item>@string/string_state_fire</item>
+        <item>@string/string_state_prefire</item>
+        <item>@string/string_state_offline</item>
+        <item>@string/string_state_fault</item>
+        <item>@string/string_state_startup</item>
+        <item>@string/string_state_supervision</item>
+        <item>@string/string_state_feedback</item>
+        <item>@string/string_state_shielding</item>
+    </string-array>
+</resources>

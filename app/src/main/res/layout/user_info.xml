@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_least">
+
+        <ImageView
+            android:id="@+id/img_header"
+            style="@style/mine_iv_head"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:src="@mipmap/user_head" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_login_id" />
+
+        <EditText
+            android:id="@+id/edit_login_id"
+            style="@style/edit_item"
+            android:hint="@string/login_account" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_position" />
+
+        <EditText
+            android:id="@+id/edit_position"
+            style="@style/edit_item"
+            android:hint="@string/your_position" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_user_name" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/edit_item"
+            android:hint="@string/your_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_mobile_phone" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/edit_item"
+            android:hint="@string/your_phone_number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_centerVertical="true"
+            android:text="@string/title_copyright_information" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/edit_item"
+            android:hint="@string/e_mail_address" />
+
+    </LinearLayout>
+</LinearLayout>

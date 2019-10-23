@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="86dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_control_bar_info"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        tools:ignore="RelativeOverlap,RtlHardcoded,UselessParent" >
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|bottom"
+            android:singleLine="true"
+            android:textColor="#ff999999"
+            android:textSize="13sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="right|bottom"
+            android:singleLine="true"
+            android:textColor="#ff999999"
+            android:textSize="13dp"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tv_resolution"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|bottom"
+                android:singleLine="true"
+                android:textColor="#ff999999"
+                android:textSize="13dp"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/tv_netspeed"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="left|bottom"
+                android:singleLine="true"
+                android:textColor="#ff999999"
+                android:textSize="13dp"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

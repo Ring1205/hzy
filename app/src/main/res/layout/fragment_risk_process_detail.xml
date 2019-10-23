@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            tools:ignore="SpUsage">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_marginEnd="@dimen/common_padding"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:background="@drawable/bg_white_corner_10"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/common_padding"
+                android:paddingEnd="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding">
+
+                <LinearLayout
+                    android:id="@+id/risk_notice_info_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_padding_half"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/risk_notice_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        style="@style/style_base_title"
+                        android:layout_marginStart="@dimen/common_clear"
+                        android:layout_marginEnd="@dimen/common_clear"
+                        android:background="@android:color/transparent"
+                        android:text="@string/string_risk_notice_existing_problems"
+                        android:textColor="@color/common_color_text" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/style_main_title"
+                    android:layout_marginStart="@dimen/common_clear"
+                    android:layout_marginEnd="@dimen/common_clear"
+                    android:background="@android:color/transparent"
+                    android:text="@string/string_risk_title_input"
+                    android:textColor="@color/common_color_text_level_3" />
+
+                <TextView
+                    android:id="@+id/risk_name"
+                    style="@style/style_risk_detail_tv" />
+
+                <include layout="@layout/divider_line_layout" />
+
+                <TextView
+                    style="@style/style_main_title"
+                    android:layout_marginStart="@dimen/common_clear"
+                    android:layout_marginEnd="@dimen/common_clear"
+                    android:background="@android:color/transparent"
+                    android:text="@string/string_risk_rectification_state"
+                    android:textColor="@color/common_color_text_level_3" />
+
+                <TextView
+                    android:id="@+id/risk_state"
+                    style="@style/style_risk_detail_tv" />
+
+                <include layout="@layout/divider_line_layout" />
+
+                <TextView
+                    style="@style/style_main_title"
+                    android:layout_marginStart="@dimen/common_clear"
+                    android:layout_marginEnd="@dimen/common_clear"
+                    android:background="@android:color/transparent"
+                    android:text="@string/string_risk_project"
+                    android:textColor="@color/common_color_text_level_3" />
+
+                <TextView
+                    android:id="@+id/risk_project_name"
+                    style="@style/style_risk_detail_tv" />
+
+                <include layout="@layout/divider_line_layout" />
+
+                <LinearLayout
+                    android:id="@+id/risk_description_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/style_main_title"
+                        android:layout_marginStart="@dimen/common_clear"
+                        android:layout_marginEnd="@dimen/common_clear"
+                        android:background="@android:color/transparent"
+                        android:text="@string/string_risk_description"
+                        android:textColor="@color/common_color_text_level_3" />
+
+                    <TextView
+                        android:id="@+id/risk_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_padding"
+                        android:layout_marginBottom="@dimen/common_padding"
+                        android:background="@drawable/bg_ddd_corner_10_hollow"
+                        android:gravity="start"
+                        android:paddingStart="@dimen/common_padding"
+                        android:paddingEnd="@dimen/common_padding"
+                        android:paddingBottom="@dimen/common_padding_half"
+                        android:textColor="@color/common_color_text"
+                        android:textColorHint="@color/common_color_hint"
+                        android:textSize="15dp" />
+
+                    <include layout="@layout/divider_line_layout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/risk_img_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/style_main_title"
+                        android:layout_marginStart="@dimen/common_clear"
+                        android:layout_marginLeft="@dimen/common_clear"
+                        android:text="@string/string_risk_img"
+                        android:textColor="@color/common_color_text_level_3" />
+
+                    <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                        android:id="@+id/risk_show_img_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/common_padding_half" />
+
+                    <include layout="@layout/divider_line_layout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/risk_video_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/style_main_title"
+                        android:layout_marginStart="@dimen/common_clear"
+                        android:layout_marginLeft="@dimen/common_clear"
+                        android:text="@string/string_risk_video"
+                        android:textColor="@color/common_color_text_level_3" />
+
+                    <ImageView
+                        android:id="@+id/item_video_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="@dimen/common_padding"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/bg_video"
+                        tools:ignore="ContentDescription" />
+
+                    <include layout="@layout/divider_line_layout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/risk_voice_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/style_main_title"
+                        android:layout_marginStart="@dimen/common_clear"
+                        android:layout_marginLeft="@dimen/common_clear"
+                        android:text="@string/string_risk_voice"
+                        android:textColor="@color/common_color_text_level_3" />
+
+                    <ImageView
+                        android:id="@+id/item_voice_img"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:padding="@dimen/common_padding"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_keyboard_voice_main_24dp"
+                        tools:ignore="ContentDescription" />
+
+                    <include layout="@layout/divider_line_layout" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/style_main_title"
+                    android:layout_marginStart="@dimen/common_clear"
+                    android:layout_marginEnd="@dimen/common_clear"
+                    android:background="@android:color/transparent"
+                    android:text="@string/string_risk_implement_user"
+                    android:textColor="@color/common_color_text_level_3" />
+
+                <TextView
+                    android:id="@+id/risk_implement_user"
+                    style="@style/style_risk_detail_tv" />
+
+                <include layout="@layout/divider_line_layout" />
+
+                <TextView
+                    style="@style/style_main_title"
+                    android:layout_marginStart="@dimen/common_clear"
+                    android:layout_marginEnd="@dimen/common_clear"
+                    android:background="@android:color/transparent"
+                    android:text="@string/string_risk_implement_time"
+                    android:textColor="@color/common_color_text_level_3" />
+
+                <TextView
+                    android:id="@+id/risk_implement_time"
+                    style="@style/style_risk_detail_tv" />
+
+                <include layout="@layout/divider_line_layout" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/risk_distribution"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_btn_height"
+            android:background="@color/common_main_color"
+            android:gravity="center"
+            android:text="@string/common_string_distribution"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:visibility="gone"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+</LinearLayout>

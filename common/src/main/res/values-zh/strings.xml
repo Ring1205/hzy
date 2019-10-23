@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="common_string_search">搜索...</string>
+    <string name="common_string_save">保存</string>
+    <string name="common_string_submit">提交</string>
+    <string name="common_string_screen">筛选</string>
+    <string name="common_string_report">上报</string>
+    <string name="common_string_distribution">分配</string>
+    <string name="common_string_operation">操作</string>
+    <string name="common_string_reset_setting">重置</string>
+    <string name="common_string_confirm">确定</string>
+    <string name="common_string_progress">进度</string>
+    <string name="is_loading">加载中，请稍候</string>
+    <string name="data_abnormal">数据异常</string>
+    <string name="all_loaded">已全部加载</string>
+    <string name="ready_to_scan">准备扫描</string>
+    <string name="common_string_search_history">搜索历史</string>
+    <string name="common_string_delete_all">全部删除</string>
+    <string name="scan_hint">请将您的手机靠近NFC标签，即可完成打卡</string>
+    <string name="scan_init">NFC功能初始化中，请准备...</string>
+    <string name="cancel_scan">取消</string>
+    <string name="start_scan">开始</string>
+    <string name="not_nfc">该设备不支持NFC</string>
+    <string name="rescan">重新扫描</string>
+    <string name="file_error">获取失败，请重新获取</string>
+    <string name="picture_preview">图片预览</string>
+
+    <string name="test_push_msg">烟雾探测器火灾报警提示</string>
+
+    <string name="audio_rec">音频录制</string>
+    <string name="please_speech">请说话</string>
+    <string name="in_recording">保存中</string>
+    <string name="done">说完了</string>
+    <string name="replay">重播</string>
+    <string name="remake">重录</string>
+    <string name="play">播放</string>
+    <string name="keep">保存</string>
+    <string name="cancel">取消</string>
+    <string name="start">开始录音</string>
+    <string name="short_recording">录音时间太短！</string>
+    <string name="transcoding">录音转码中...</string>
+    <string name="common_string_all">全部</string>
+    <string name="common_string_open">开启</string>
+    <string name="common_string_next">下一步</string>
+    <string name="common_string_complete">完成</string>
+    <string name="common_string_cannot_be_null">不能为空</string>
+    <string name="common_string_format_error">格式错误</string>
+    <string name="common_string_url_error">服务器地址错误</string>
+    <string name="non_null">输入为空！</string>
+    <string name="common_dynamic_time_format">更新于 %s</string>
+    <string name="long_press_camera">长按摄像</string>
+    <string name="time_is_too_short">录制时间过短</string>
+    <string name="toast_email_null">邮箱地址不能为空</string>
+
+    <!--权限-->
+    <string name="common_permission_camera">没有此权限，无法开启相机，请开启权限。</string>
+    <string name="common_permission_contact">您拒绝了读取联系人权限</string>
+    <string name="common_permission_location">您拒绝了定位权限</string>
+    <string name="common_permission_call">您拒绝了拨号权限</string>
+    <string name="common_permission_album">您拒绝了读取相册权限</string>
+
+    <string name="success_operation">操作成功</string>
+    <string name="data_incomplete">填写不完整</string>
+
+    <string name="error_toast_401">登录失效</string>
+    <string name="error_toast_other">服务器异常</string>
+    <string name="error_toast_net">网络异常</string>
+    <string name="video_loading">正在缓冲&#8230;</string>
+    <string name="hint_passwd_ps">注意：请输入8–15位字符,包含大小写字母、数字和特殊字符中的三种以上</string>
+
+    <!--dialog-->
+    <string name="common_string_dialog_cb">取消后不再显示</string>
+
+    <string name="string_state_normal">正常</string>
+    <string name="string_state_fire">火警</string>
+    <string name="string_state_prefire">预警</string>
+    <string name="string_state_fault">故障</string>
+    <string name="string_state_supervision">监管</string>
+    <string name="string_state_startup">启动</string>
+    <string name="string_state_shielding">屏蔽</string>
+    <string name="string_state_offline">离线</string>
+    <string name="string_state_feedback">反馈</string>
+
+    <!--span-->
+    <string name="string_file_submit_judge_string_show">图片：%s\u3000视频：%s\u3000语音：%s\u3000</string>
+
+    <string name="dynamic_time_yesterday">昨天 </string>
+    <string name="dynamic_time_anteayer">前天 </string>
+
+    <string-array name="weeks_time_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="moments_time_array">
+        <item>中午</item>
+        <item>凌晨</item>
+        <item>早上</item>
+        <item>下午</item>
+        <item>晚上</item>
+    </string-array>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/text_item_tite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:background="@color/colorLine"
+        android:clickable="true"
+        android:drawableRight="@mipmap/ic_patrol_point_address"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="@dimen/card_margin"
+        android:paddingTop="@dimen/card_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:paddingBottom="@dimen/card_margin"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <TextView
+        style="@style/style_main_title"
+        android:drawableTint="@color/colorAccent"
+        android:paddingLeft="@dimen/button_margin"
+        android:paddingRight="@dimen/button_margin"
+        android:text="@string/patrol_project" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_project_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_task_project_submit" />
+
+    <LinearLayout
+        android:id="@+id/ll_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:background="@color/color_state_prefire"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_task"
+            android:textColor="@color/color_text_submit"
+            android:textSize="@dimen/text_18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/push_margin_width"
+        android:layout_height="@dimen/push_margin"
+        android:background="@drawable/bg_title_fire"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_msg_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_top_margin"
+            android:src="@mipmap/ic_msg_fire" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/push_margin"
+        android:layout_marginLeft="@dimen/line_3dp"
+        android:layout_marginRight="@dimen/title_padding"
+        android:background="@drawable/bg_title_msg"
+        android:gravity="center|left">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/text_item_tite"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/test_push_msg" />
+    </RelativeLayout>
+</LinearLayout>

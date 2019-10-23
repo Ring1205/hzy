@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/risk_screen_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="@color/common_main_color">
+
+            <ezy.ui.layout.LoadingLayout
+                android:id="@+id/load_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                    android:id="@+id/risk_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </ezy.ui.layout.LoadingLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@android:color/white">
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="SpUsage">
+
+                    <LinearLayout
+                        android:id="@+id/ll_risk_source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/common_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_padding"
+                            android:text="@string/string_risk_resource_title"
+                            android:textColor="@color/common_color_text"
+                            android:textSize="@dimen/common_padding" />
+
+                        <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                            android:id="@+id/rv_risk_resource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <include layout="@layout/device_line_risk_list_layout" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/common_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_padding"
+                            android:text="@string/string_risk_level"
+                            android:textColor="@color/common_color_text"
+                            android:textSize="@dimen/common_padding" />
+
+                        <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                            android:id="@+id/rv_risk_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <include layout="@layout/device_line_risk_list_layout" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_risk_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/common_padding">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_padding"
+                            android:text="@string/string_risk_state_title"
+                            android:textColor="@color/common_color_text"
+                            android:textSize="@dimen/common_padding" />
+
+                        <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                            android:id="@+id/rv_risk_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <include layout="@layout/device_line_risk_list_layout" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/common_padding"
+                android:paddingBottom="@dimen/common_padding_double">
+
+                <RelativeLayout
+                    android:id="@+id/risk_screen_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/style_risk_search_tab"
+                        android:layout_width="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/common_bg_corner_transparent_16"
+                        android:text="@string/common_string_reset_setting" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/risk_screen_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/style_risk_search_tab"
+                        android:layout_width="100dp"
+                        android:background="@drawable/common_bg_corner_main_16"
+                        android:text="@string/common_string_confirm"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

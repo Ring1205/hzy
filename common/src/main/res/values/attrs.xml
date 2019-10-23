@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="anim_btn_params">
+        <attr name="anim_btn_text" format="string" />
+        <attr name="anim_btn_text_color" format="color" />
+        <attr name="anim_btn_text_size" format="dimension" />
+        <!--旋转时间-->
+        <attr name="revolution_time" format="integer" />
+    </declare-styleable>
+
+    <!--仿微信录视频功能-->
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconMargin" format="dimension"/>
+    <attr name="iconSrc" format="reference"/>
+    <attr name="iconLeft" format="reference"/>
+    <attr name="iconRight" format="reference"/>
+    <attr name="duration_max" format="integer"/>
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize"/>
+        <attr name="iconMargin"/>
+        <attr name="iconSrc"/>
+        <attr name="iconLeft"/>
+        <attr name="iconRight"/>
+        <attr name="duration_max"/>
+    </declare-styleable>
+    <declare-styleable name="HoverView">
+        <attr name="mTopFill" format="float" />
+        <attr name="mTopHover" format="float" />
+    </declare-styleable>
+    <declare-styleable name="LCardView">
+        <attr name="leftShadowWidth" format="dimension" />
+        <attr name="topShadowHeight" format="dimension" />
+        <attr name="rightShadowWidth" format="dimension" />
+        <attr name="bottomShadowHeight" format="dimension" />
+        <attr name="shadowSize" format="dimension" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowStartAlpha" format="integer" />
+        <attr name="shadowFluidShape" format="enum">
+            <enum name="adsorption" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="cardBackgroundColor" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="leftTopCornerRadius" format="dimension" />
+        <attr name="rightTopCornerRadius" format="dimension" />
+        <attr name="leftBottomCornerRadius" format="dimension" />
+        <attr name="rightBottomCornerRadius" format="dimension" />
+        <attr name="elevation" format="dimension" />
+        <attr name="elevationAffectShadowColor" format="boolean" />
+        <attr name="elevationAffectShadowSize" format="boolean" />
+        <attr name="xOffset" format="dimension" />
+        <attr name="yOffset" format="dimension" />
+    </declare-styleable>
+</resources>

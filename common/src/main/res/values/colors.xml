@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c3c43</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ef7133</color>
+
+    <color name="divider_line_color">#F0F0F0</color>
+    <color name="toolbar_menu">#AAAAFF</color>
+    <color name="common_title_color">#FFFFFF</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="color_line_cd">#cdcdcd</color>
+    <color name="bg_btn">#dadada</color>
+
+    <color name="common_color_hint">#CCC</color>
+    <color name="common_main_color">#ef7133</color>
+    <color name="black">#393943</color>
+    <!--主文本色值-->
+    <color name="common_color_text">#3C3C43</color>
+    <color name="common_color_text_level_2">#4F4F57</color>
+    <color name="common_color_text_level_3">#999</color>
+    <color name="common_color_bg">#F0F0F0</color>
+    <color name="common_color_666">#666666</color>
+    <color name="color_blue">#35b5f7</color>
+
+    <color name="divider_line_color_light">#F0F0F0</color>
+
+    <color name="common_tab_unselect_light">#F0F0F0</color>
+
+    <color name="colorItem">#666666</color>
+</resources>

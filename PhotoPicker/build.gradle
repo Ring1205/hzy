@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion project.ext.compileSdkVersion
+  resourcePrefix "__picker_"
+
+  dexOptions {
+    javaMaxHeapSize "4g"
+  }
+  defaultConfig {
+    minSdkVersion project.ext.minSdkVersion
+    targetSdkVersion project.ext.targetSdkVersion
+  }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        lintOptions {
+            // true--错误发生后停止gradle构建
+            abortOnError false
+            //  true--所有正式版构建执行规则生成崩溃的lint检查，如果有崩溃问题将停止构建
+            checkReleaseBuilds false
+        }
+    }
+}
+
+ext {
+  supportLibVersion = "25.0.1"
+}
+
+dependencies {
+ implementation project.ext.dependencies.support
+ implementation project.ext.dependencies.appCompat
+ implementation project.ext.dependencies.design
+// implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+ implementation "com.android.support:support-annotations:$supportLibVersion"
+ implementation "com.nineoldandroids:library:2.4.0"
+ implementation project.ext.dependencies.glide
+    implementation project(path: ':common')
+}
+configurations.all {
+  resolutionStrategy.force 'com.android.support:support-annotations:25.1.0'
+}

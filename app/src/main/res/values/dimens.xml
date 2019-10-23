@@ -1,0 +1,64 @@
+<resources>
+    <dimen name="common_clear">0dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="common_padding_select_tab_vertical">5dp</dimen>
+    <dimen name="common_padding_select_tab_horizontal">@dimen/common_padding</dimen>
+    
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_start">16dp</dimen>
+    <dimen name="text_level">14dp</dimen>
+    <dimen name="text_least">12dp</dimen>
+    <dimen name="bottom_height">48dp</dimen>
+    <dimen name="bottom_wechat_height">52dp</dimen>
+    <dimen name="card_view_height">55dp</dimen>
+    <dimen name="item_haight">96dp</dimen>
+    <dimen name="item_haight_src">120dp</dimen>
+    <dimen name="mine_head_height">85dp</dimen>
+    <dimen name="mine_head_src">60dp</dimen>
+    <dimen name="text_tite">18dp</dimen>
+    <dimen name="item_height">55dp</dimen>
+    <dimen name="text_top_margin">5dp</dimen>
+    <dimen name="card_pading">6dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+    <dimen name="line_20dp">20dp</dimen>
+    <dimen name="line_4dp">4dp</dimen>
+    <dimen name="line_3dp">3dp</dimen>
+    <dimen name="line_2dp">2dp</dimen>
+    <dimen name="line_1px">1px</dimen>
+    <dimen name="line_1dp">1dp</dimen>
+    <dimen name="weight">0dp</dimen>
+    <dimen name="edit_layout_width">230dp</dimen>
+    <dimen name="tab_layout_width">180dp</dimen>
+    <dimen name="item_36_least">36dp</dimen>
+    <dimen name="item_34_least">34dp</dimen>
+    <dimen name="item_32_least">32dp</dimen>
+    <dimen name="edit_search_margin">30dp</dimen>
+    <dimen name="top_margin_height">45dp</dimen>
+    <dimen name="common_padding">10dp</dimen>
+    <dimen name="common_padding_half">7.5dp</dimen>
+    <dimen name="common_line_height">0.5dp</dimen>
+    <dimen name="common_text_spacing">6dp</dimen>
+
+    <dimen name="text_36sp">36sp</dimen>
+    <dimen name="text_34sp">34sp</dimen>
+    <dimen name="text_32sp">32sp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+    <dimen name="text_28sp">28sp</dimen>
+    <dimen name="text_26sp">26sp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+    <dimen name="text_22sp">22sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="common_padding_double">30dp</dimen>
+</resources>

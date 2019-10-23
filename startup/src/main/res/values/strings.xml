@@ -1,0 +1,38 @@
+<resources>
+    <string name="start_up_string_sign_in">Login</string>
+    <string name="start_up_string_remember_password">Remember password</string>
+    <string name="start_up_string_sign_up">Registration</string>
+    <string name="start_up_string_sign_in_setting">The logging Settings</string>
+    <string name="start_up_string_forget_password">Forget password</string>
+    <string name="start_up_string_set_password">Set password</string>
+    <string name="start_up_string_privacy_policy">Privacy Policy</string>
+    <string name="start_up_string_improve_information">Perfect information</string>
+    <string name="start_up_string_get_verification">Get code</string>
+
+    <string name="start_up_hint_account">Please enter account number</string>
+    <string name="start_up_hint_phone_or_email">Please fill in your phone number or email</string>
+    <string name="start_up_hint_email">E-mail</string>
+    <!--图形验证码，中文相同，英文需要作出区分-->
+    <string name="start_up_hint_enter_captcha">Graph validate code</string>
+    <!--短信/邮箱验证码，中文相同，英文需要作出区分-->
+    <string name="start_up_hint_enter_verification">Verification code</string>
+    <string name="start_up_hint_enter_password">Please fill in the password</string>
+    <string name="start_up_hint_re_enter_password">Please fill in the password again</string>
+    <string name="start_up_hint_enter_username">Please fill in your real name</string>
+    <string name="start_up_hint_enter_server_address">Please enter the server address</string>
+    <string name="start_up_hint_enter_port">Port number</string>
+    <string name="start_up_hint_https_encryption">HTTPS Encryption</string>
+
+    <string name="start_up_string_sign_up_privacy_policy">Privacy Policy</string>
+
+    <string name="start_up_digits_password">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_!@#$%^&amp;&lt;&gt;*`~()-+=.,;:</string>
+
+    <!--提示-->
+    <string name="string_toast_password_not_match">Entered passwords differ</string>
+    <string name="string_toast_password_contains_account">New password cannot contain account number</string>
+    <string name="string_toast_password_equals_new">The new password cannot be the same as the old one</string>
+    <string name="string_toast_history_account_none">No historical account</string>
+    <string name="string_toast_data_incomplete">Incomplete filling</string>
+    <string name="string_toast_host_incorrect">Please enter the server address</string>
+    <string name="string_toast_sign_in">Please enter user name or password</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_patrol_pro"
+        style="@style/text_item_tite_level"
+        android:padding="@dimen/card_pading" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/card_margin"
+        android:paddingBottom="@dimen/card_margin"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/text_margin"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:layout_height="wrap_content" />
+    <View style="@style/line_f0_1px" />
+</RelativeLayout>

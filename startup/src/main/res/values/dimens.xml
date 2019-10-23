@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="start_up_title_size">23dp</dimen>
+	<dimen name="start_up_et_to_others">30dp</dimen>
+	<dimen name="common_padding">15dp</dimen>
+</resources>

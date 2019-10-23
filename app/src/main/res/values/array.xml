@@ -1,0 +1,40 @@
+<resources>
+    <string-array name="fire_review_array">
+        <item>@string/array_true_fire</item>
+        <item>@string/array_false_fire</item>
+        <item>@string/array_test_fire</item>
+        <item>@string/array_not_review</item>
+    </string-array>
+
+    <string-array name="fire_review_count_array">
+        <item>@string/array_review_count</item>
+        <item>@string/array_fire_count</item>
+    </string-array>
+
+    <string-array name="online_array">
+        <item>@string/array_online</item>
+        <item>@string/array_offline</item>
+    </string-array>
+
+    <string-array name="risk_level_array">
+        <item>@string/array_risk_level_1</item>
+        <item>@string/array_risk_level_2</item>
+        <item>@string/array_risk_level_3</item>
+    </string-array>
+
+    <string-array name="risk_level_array_for_search">
+        <item>@string/common_string_all</item>
+        <item>@string/array_risk_level_1</item>
+        <item>@string/array_risk_level_2</item>
+        <item>@string/array_risk_level_3</item>
+    </string-array>
+
+    <string-array name="risk_state_array">
+        <item>@string/common_string_all</item>
+        <item>@string/array_risk_state_no_rectification</item>
+        <item>@string/array_risk_state_rectification</item>
+        <item>@string/array_risk_state_pending_acceptance</item>
+        <item>@string/array_risk_state_pending_qualified</item>
+        <item>@string/array_risk_state_pending_unqualified</item>
+    </string-array>
+</resources>

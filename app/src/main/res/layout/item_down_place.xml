@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_wechat_height">
+    <TextView
+        android:id="@+id/tv_place"
+        android:paddingLeft="@dimen/text_margin"
+        style="@style/text_item_tite_level"
+        android:text="@string/title_place_name" />
+    <TextView
+        android:id="@+id/tv_place_location"
+        android:paddingLeft="@dimen/text_margin"
+        android:layout_alignParentBottom="true"
+        style="@style/text_item_tite_level"
+        android:text="@string/title_address" />
+    <View
+        style="@style/line_f0_1px"/>
+</RelativeLayout>

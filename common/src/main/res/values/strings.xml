@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="common_string_search">Search...</string>
+    <string name="common_string_save">SAVE</string>
+    <string name="common_string_submit">SUBMIT</string>
+    <string name="common_string_screen">SCREEN</string>
+    <string name="common_string_distribution">DISTRIBUTION</string>
+    <string name="common_string_operation">OPERATION</string>
+    <string name="common_string_report">REPORT</string>
+    <string name="common_string_reset_setting">RESET</string>
+    <string name="common_string_confirm">CONFIRM</string>
+    <string name="common_string_progress">Progress</string>
+    <string name="is_loading">Loading…</string>
+    <string name="data_abnormal">Error…</string>
+    <string name="all_loaded">All Loaded</string>
+    <string name="ready_to_scan">Ready to Scan</string>
+    <string name="common_string_search_history">Search History</string>
+    <string name="common_string_delete_all">All delete</string>
+    <string name="scan_hint">Hold phone near [Automatically read the NFC card information to complete scan]</string>
+    <string name="scan_init">NFC function to initialize, please prepare…</string>
+    <string name="cancel_scan">Cancel</string>
+    <string name="start_scan">START</string>
+    <string name="not_nfc">The device does not support NFC</string>
+    <string name="rescan">Rescan</string>
+    <string name="file_error">Failed to get. Please try again</string>
+    <string name="picture_preview">Picture Preview</string>
+    <string name="common_dynamic_time_format">Updated at %s</string>
+    <string name="test_push_msg">Smoke detector fire alarm prompt</string>
+    <string name="toast_email_null">The email address cannot be empty</string>
+
+    <string name="audio_rec">Audio Rec</string>
+    <string name="please_speech">Speak now</string>
+    <string name="in_recording">Save</string>
+    <string name="done">Finish</string>
+    <string name="replay">Retry</string>
+    <string name="remake">Remake</string>
+    <string name="play">Play</string>
+    <string name="keep">Keep</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Start</string>
+    <string name="short_recording">The recording time is too short!</string>
+    <string name="transcoding">Transcoding in</string>
+    <string name="common_string_all">All</string>
+    <string name="common_string_open">Open</string>
+    <string name="common_string_next">Next</string>
+    <string name="common_string_complete">complete</string>
+    <string name="common_string_cannot_be_null">can\'t be null</string>
+    <string name="common_string_format_error">Format error</string>
+    <string name="common_string_url_error">Server address error</string>
+    <string name="non_null">Enter null!</string>
+
+    <string name="long_press_camera">long press camera</string>
+    <string name="time_is_too_short">time is too short</string>
+
+    <string name="success_operation">Successful operation</string>
+    <string name="data_incomplete">Incomplete Filling</string>
+
+    <!--权限-->
+    <string name="common_permission_camera">The camera cannot be opened without this permission. Please enable this permission.</string>
+    <string name="common_permission_contact">You denied access to the contacts</string>
+    <string name="common_permission_location">You denied location permission</string>
+    <string name="common_permission_call">You denied dial-up access</string>
+    <string name="common_permission_album">You denied access to the album</string>
+
+    <string name="error_toast_401">Logon failure</string>
+    <string name="error_toast_other">Server exception</string>
+    <string name="error_toast_net">Network anomaly</string>
+    <string name="video_loading">Loading&#8230;</string>
+    <string name="hint_passwd_ps">PS: Make sure it\'s more than 15 characters OR at least 8 characters including number, lowercase letter and special characters. </string>
+
+    <!--dialog-->
+    <string name="common_string_dialog_cb">No longer displayed after canceling</string>
+
+    <!--状态-->
+    <string name="string_state_normal">Normal</string>
+    <string name="string_state_fire">Alarm</string>
+    <string name="string_state_prefire">Warn</string>
+    <string name="string_state_fault">Fault</string>
+    <string name="string_state_supervision">Supervise</string>
+    <string name="string_state_startup">Launch</string>
+    <string name="string_state_shielding">Shield</string>
+    <string name="string_state_offline">Off-line</string>
+    <string name="string_state_feedback">Feedback</string>
+
+    <!--span-->
+    <string name="string_file_submit_judge_string_show">Picture：%s\u3000Video：%s\u3000Voice：%s\u3000</string>
+
+    <string name="dynamic_time_yesterday">Yesterday </string>
+    <string name="dynamic_time_anteayer">Anteayer </string>
+
+    <string-array name="weeks_time_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday </item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="moments_time_array">
+        <item>Noon</item>
+        <item>morning</item>
+        <item>morning</item>
+        <item>afternoon</item>
+        <item>night</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zxycloud.common.widget.LCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/history_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="12dp"
+    app:cornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_search" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/common_bg_search_edit"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/common_padding"
+            android:paddingEnd="@dimen/common_padding"
+            tools:ignore="RtlSymmetry">
+
+            <EditText
+                android:id="@+id/et_search_key"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/common_string_search"
+                android:inputType="text"
+                android:paddingLeft="@dimen/fab_margin"
+                android:textColor="@color/common_color_text_level_3"
+                android:textColorHint="@color/common_color_hint"
+                android:textSize="14dp"
+                tools:ignore="Autofill,SpUsage" />
+
+            <ImageView
+                android:id="@+id/et_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_padding"
+                android:layout_marginRight="@dimen/card_margin"
+                android:src="@mipmap/common_ic_search_history_delete"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_history_manage_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/common_bg_underline"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="SpUsage">
+
+            <TextView
+                android:id="@+id/search_history_delete_tv"
+                style="@style/style_search_delete_manage_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/common_string_search_history" />
+
+            <TextView
+                android:id="@+id/search_history_delete_all"
+                style="@style/style_search_delete_manage_tv"
+                android:layout_width="wrap_content"
+                android:text="@string/common_string_delete_all"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/search_history_delete_change"
+                style="@style/style_search_delete_manage_tv"
+                android:layout_width="wrap_content"
+                android:drawableEnd="@mipmap/common_ic_search_history_manager"
+                android:drawableRight="@mipmap/common_ic_search_history_manager" />
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/include_classics_header" />
+            <ezy.ui.layout.LoadingLayout
+                android:id="@+id/load_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                        android:id="@+id/common_search_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.zxycloud.common.widget.BswRecyclerView.BswRecyclerView
+                        android:id="@+id/common_history_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+            </ezy.ui.layout.LoadingLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</com.zxycloud.common.widget.LCardView>

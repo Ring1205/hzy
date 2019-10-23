@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_item_tite_level"
+            android:layout_marginTop="@dimen/card_pading"
+            android:text="@string/title_patrol_indicators" />
+
+        <TextView
+            android:id="@+id/tv_project_index"
+            style="@style/text_item_end"
+            android:layout_marginLeft="@dimen/weight"
+            android:layout_marginTop="@dimen/card_pading" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_device_type"
+            style="@style/text_item_tite_level"
+            android:text="@string/title_patrol_situation" />
+
+        <LinearLayout
+            android:id="@+id/ll_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_state_normal"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_state_normal" />
+
+            <ImageView
+                android:id="@+id/iv_check_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_pading"
+                android:src="@mipmap/ic_point_state_non" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_state_warn"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_state_fault" />
+
+            <ImageView
+                android:id="@+id/iv_check_abnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_pading"
+                android:src="@mipmap/ic_point_state_non" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_f0_1px" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/__picker_base_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/__picker_title_height"
+        android:background="@color/__picker_blue">
+
+        <ImageView
+            android:id="@+id/__picker_base_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/__picker_back"
+            android:padding="@dimen/__picker_size_13"
+            android:src="@drawable/__picker_back" />
+
+        <TextView
+            android:id="@+id/__picker_base_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/__picker_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/__picker_size_18" />
+
+        <TextView
+            android:id="@+id/__picker_base_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/__picker_title_height"
+            android:layout_alignParentRight="true"
+            android:text="@string/__picker_confirm"
+            android:layout_marginRight="@dimen/__picker_size_10"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/__picker_size_17" />
+    </RelativeLayout>
+</RelativeLayout>

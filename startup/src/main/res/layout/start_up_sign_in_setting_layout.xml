@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/start_up_style_item_bg"
+    tools:ignore="SpUsage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/start_up_string_sign_in_setting"
+        android:textColor="@color/start_up_color_login_title"
+        android:textSize="@dimen/start_up_title_size" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/start_up_setting_til_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/start_up_et_to_others"
+        app:hintTextAppearance="@style/common_signin_text_input_layout_style">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/start_up_setting_et_url"
+            style="@style/start_up_style_item_et"
+            android:hint="@string/start_up_hint_enter_server_address"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:hintTextAppearance="@style/common_signin_text_input_layout_style">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/start_up_setting_et_port"
+            style="@style/start_up_style_item_et"
+            android:hint="@string/start_up_hint_enter_port"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/start_up_hint_https_encryption"
+            android:textColor="@color/start_up_color_login_text"
+            android:textSize="15dp" />
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/ip_https_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingLeft="@dimen/text_size_header"-->
+        <!--android:paddingRight="@dimen/common_padding">-->
+
+        <com.zxycloud.common.widget.MyCheckBox
+            android:id="@+id/ip_https"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+    <com.zxycloud.common.widget.AnimButton
+        android:id="@+id/start_up_setting_btn_complete"
+        style="@style/start_up_style_item_btn_main"
+        android:layout_height="40dp"
+        app:anim_btn_text="@string/common_string_complete"
+        app:anim_btn_text_color="@android:color/white"
+        app:anim_btn_text_size="17dp"
+        app:revolution_time="2000" />
+</LinearLayout>

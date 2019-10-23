@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_btn"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                style="@style/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_margin"
+                android:text="@string/submit_error_message" />
+
+            <ImageView
+                android:id="@+id/iv_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/button_margin"
+                android:src="@mipmap/common_ic_title_finish" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_note"
+                style="@style/edit_comment"
+                android:hint="@string/hint_descriptor"
+                android:maxLength="50" />
+
+            <TextView
+                android:id="@+id/tv_descriptor_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/et_note"
+                android:visibility="invisible"
+                android:layout_alignBottom="@+id/et_note"
+                android:padding="@dimen/card_margin"
+                android:text="@string/toast_information_limit"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_add_accessory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:paddingLeft="@dimen/card_margin"
+            android:paddingRight="@dimen/card_margin" />
+
+        <TextView
+            android:id="@+id/tv_add_img"
+            style="@style/text_item_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="@dimen/text_margin"
+            android:text="@string/add_picture"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_14sp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/submit_task"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

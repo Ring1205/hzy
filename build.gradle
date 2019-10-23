@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google()
+        // 路由
+        jcenter()
+        maven { url 'https://dl.bintray.com/sarlmoclen/SRouter' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+
+        // 路由
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// 通用配置，需要创建common_config.gradle，并在每个gradle中添加对应配置
+subprojects {
+    apply from: "${project.rootDir}/common_config.gradle"
+}

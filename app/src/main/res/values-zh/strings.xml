@@ -1,0 +1,661 @@
+<resources>
+    <string name="app_name">火知眼助手</string>
+
+    <string name="press_again_exit">再按一次退出</string>
+
+    <string name="home">首页</string>
+    <string name="count">统计</string>
+    <string name="service">服务</string>
+    <string name="mine">我的</string>
+
+    <string name="change_password">修改密码</string>
+    <string name="change_phone_number">修改手机号</string>
+    <string name="add_phone_num">添加手机号</string>
+    <string name="modify_mailbox">修改邮箱</string>
+    <string name="add_email_adds">添加邮箱</string>
+    <string name="common_problem">常见问题</string>
+    <string name="safety_fire_knowledge">消防知识</string>
+    <string name="consumer_hotline">客服电话</string>
+    <string name="service_agreement">服务协议</string>
+    <string name="switch_project">切换单位</string>
+    <string name="about_us">关于我们</string>
+    <string name="quit">退出</string>
+
+    <!-- mine -->
+    <string name="modify_password">修改密码</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="confirm_mailbox">确认邮箱</string>
+    <string name="new_modify_mailbox">新邮箱号</string>
+    <string name="confirm_phone">确认手机号</string>
+    <string name="new_phone_number">新手机号</string>
+    <string name="display_password">显示密码</string>
+    <string name="forget_password">忘记密码</string>
+    <!--<string name="login_id">登录账号：</string>-->
+    <string name="login_account">用户账号</string>
+    <!--<string name="profile_picture">修改密码</string>-->
+    <string name="your_position">您的管理职位</string>
+    <!--<string name="user_name">真实姓名：</string>-->
+    <string name="your_name">你的名字</string>
+    <!--<string name="sex">性别</string>-->
+    <string name="your_gender">您的性别</string>
+    <string name="your_birthday">您的生辰</string>
+    <string name="your_phone_number">您的手机号</string>
+    <string name="e_mail_address">邮箱地址</string>
+    <string name="all_project">全部单位</string>
+    <string name="confirm_exit">确认退出</string>
+    <string name="user_exit">退出当前帐户将不会同步警报信息</string>
+    <string name="logout_user">注销用户？</string>
+    <string name="confirm_cancellation">确认注销</string>
+    <string name="canellation_specification">注销当前帐户将失去所有管理权限</string>
+    <string name="select_units">选择单位</string>
+    <string name="select_area">选择区域</string>
+    <string name="select_place">选择场所</string>
+
+    <!--WebView-->
+    <string name="web_view_title_question">详情</string>
+
+    <!-- service -->
+    <string name="install">设备安装</string>
+    <string name="records">运行记录</string>
+    <string name="videos">视频信息</string>
+    <string name="project_message">单位信息</string>
+
+    <!-- install -->
+    <string name="device_list">设备列表</string>
+    <string name="place_list">场所列表</string>
+    <string name="area_list">区域列表</string>
+    <string name="infrastructure">基础设施</string>
+
+    <!-- users -->
+    <string name="users_list">用户列表</string>
+    <string name="user_id">用户账号</string>
+    <string name="users_name">用户姓名</string>
+    <string name="users_state">登录状态</string>
+    <string name="user_info">用户信息</string>
+
+    <!-- patrol -->
+    <string name="task_detail">任务详情</string>
+    <string name="inspection_point">巡查点位</string>
+    <string name="patrol_project">巡查项目</string>
+    <string name="clock_time">打卡时间</string>
+    <string name="task_list">任务列表</string>
+    <string name="tag_position">标签位置</string>
+
+    <!-- task -->
+    <string name="task_no_started">未开始</string>
+    <string name="task_under_way">进行中</string>
+    <string name="task_off_the_stocks">已完成</string>
+    <string name="task_unfinished">未完成</string>
+    <string name="task_expired">已过期</string>
+    <string name="task_clock_in">打卡</string>
+    <string name="scan_nfc">NFC</string>
+    <string name="scan_qr_code">二维码</string>
+    <string name="patrol_task">执行任务</string>
+    <string name="task_time_limit">起止时间</string>
+    <string name="patrol_progress">巡查进度</string>
+    <string name="inspectors">巡查人员</string>
+    <string name="scan_search">扫描查询</string>
+    <string name="inspection_method">巡查方式</string>
+    <string name="tap_all">全部</string>
+    <string name="tap_task_dns">未开始</string>
+    <string name="tap_task_doing">执行中</string>
+    <string name="tap_task_done">已完成</string>
+    <string name="tap_task_stale">已过期</string>
+
+    <!-- record -->
+    <string name="string_alert_project">报警单位：</string>
+    <string name="string_alert_place">报警场所：</string>
+    <string name="string_alert_installation">报警位置：</string>
+    <string name="string_alert_device_type">设备类型：</string>
+    <string name="string_alert_linkman">联系人：</string>
+
+    <string name="string_alert_floor_plan">火警点位</string>
+    <string name="string_alert_video">视频联动</string>
+    <string name="string_alert_device_detail">设备详情</string>
+
+    <!--alert detail-->
+    <!--Sketch-->
+    <string name="string_alert_project_name">单位：</string>
+    <string name="string_alert_area_name">区域：</string>
+    <string name="string_alert_place_name">场所：</string>
+    <string name="string_alert_time">时间：</string>
+    <!--detail-->
+    <string name="string_alert_fire_title">火警详情</string>
+    <string name="string_alert_prefire_title">预警详情</string>
+    <string name="string_alert_alert_type">警情类型：</string>
+    <string name="string_alert_happen_time">发生时间：</string>
+    <string name="string_alert_device_install">安装位置：</string>
+    <string name="string_alert_reviewer">复核人员：</string>
+    <string name="string_alert_review_time">复核时间：</string>
+    <string name="string_alert_review_result">复核结果：</string>
+    <string name="string_device_adapter_title">子设备列表</string>
+    <string name="string_device_adapter_state">子设备状态：</string>
+    <string name="common_string_switch_project">切换单位</string>
+    <string name="string_alarm_false_count">误报数：</string>
+
+    <!-- point -->
+    <string name="point_add">添加</string>
+    <string name="point_change">编辑</string>
+    <string name="point_finish">完成</string>
+    <string name="point_list">巡查点列表</string>
+    <string name="add_point">添加巡查点</string>
+    <string name="change_point">编辑巡查点</string>
+    <string name="point_name">巡查点名称</string>
+    <string name="point_location">巡查点位置</string>
+    <string name="point_detail">巡查点详情</string>
+    <string name="patrol_type">巡查项类型</string>
+    <string name="patrol_made_date">出厂日期</string>
+    <string name="patrol_start_date">使用日期</string>
+    <string name="sign_in_type">打卡类型</string>
+
+    <string name="work_check_all">一键正常</string>
+    <string name="work_check_normal_or_warn">正常/异常</string>
+    <string name="work_state_normal">正常</string>
+    <string name="work_state_warn">异常</string>
+    <string name="work_state_unchecked">未检查</string>
+    <string name="point_unqualified_records">不合格记录</string>
+    <string name="point_qualified_records">合格记录</string>
+    <string name="submit_task">提交任务</string>
+    <string name="add_picture">添加图片</string>
+    <string name="submit_error_message">异常信息</string>
+    <string name="stick">置顶</string>
+
+    <!-- detail -->
+    <string name="detail_description">巡查描述</string>
+    <string name="detail_patrol_note">巡查备注</string>
+    <string name="detail_pictures">巡查图片</string>
+
+    <!-- histroy -->
+    <string name="histroy_details">历史详情</string>
+
+    <!-- device -->
+    <string name="device_message">设备信息</string>
+    <string name="device_details">设备详情</string>
+    <string name="device_install_details">安装详情</string>
+    <string name="device_base_information">基本信息</string>
+    <string name="belongs_place">所属场所</string>
+    <string name="device_default_place">默认场所</string>
+    <string name="device_plan">设备点位</string>
+    <string name="device_accessory">添加附件</string>
+    <string name="accessory">附件</string>
+    <string name="device_record">录音</string>
+    <string name="device_video">视频</string>
+    <string name="device_photograph">拍照</string>
+    <string name="device_picture">图片</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="long_click_delete">长按删除</string>
+    <string name="device_assign">分配设备</string>
+    <string name="device_unallocated">未分配</string>
+    <string name="device_allocated">已分配</string>
+    <string name="device_install_list">安装列表</string>
+    <string name="fire_detection_and_alarm_system">火灾探测报警系统</string>
+    <string name="device_allocation_type">分配方式</string>
+    <string name="device_allocation_type_msg">是否以批量分配网关与设备</string>
+    <string name="device_allocation_type_right">设备单独分配</string>
+    <string name="device_allocation_type_left">网关批量分配</string>
+    <string name="device_allocation_type_gateway_msg">是否更新网关下所有设备</string>
+    <string name="device_allocation_type_gateway_left">所有设备</string>
+    <string name="device_allocation_type_gateway_right">未分配设备</string>
+
+    <!-- channels -->
+    <string name="channels_add">添加通道</string>
+    <string name="channels_edit">编辑通道</string>
+    <string name="channels_type">通道类型</string>
+    <string name="channels_unit">采集单位</string>
+    <string name="channels_code">通道号</string>
+    <string name="channels_amplification_factor">放大倍数</string>
+    <string name="channels_install_location">安装位置</string>
+    <string name="channels_install_max_range">采集上限</string>
+    <string name="channels_install_min_range">采集下限</string>
+    <string name="channels_install_max_alarm">报警上限</string>
+    <string name="channels_install_min_alarm">报警下限</string>
+
+
+    <!--channel-->
+    <string name="string_channel_title">通道列表</string>
+
+    <!-- place -->
+    <string name="place_details">场所详情</string>
+    <string name="add_place">添加场所</string>
+    <string name="devices_count">设备数量</string>
+    <string name="place_name">场所名称</string>
+    <string name="place_address">所在地址</string>
+    <string name="place_device">独立式设备</string>
+    <string name="place_adapter">组合式网关</string>
+
+    <!-- area -->
+    <string name="area_details">区域详情</string>
+    <string name="menu_contacts">联系人</string>
+    <string name="select_parent_area">选择父级区域</string>
+    <string name="area_level_first">一级区域</string>
+    <string name="area_level_second">二级区域</string>
+    <string name="area_level_third">三级区域</string>
+
+    <!-- unit -->
+    <string name="string_project_base_information">基本信息</string>
+    <string name="string_project_name">单位名称</string>
+    <string name="string_project_type">单位类型</string>
+    <string name="string_project_region">行政区域</string>
+    <string name="string_project_address">单位地址</string>
+    <string name="string_project_monitoring_range">监控范围</string>
+    <string name="string_project_charger">单位负责人</string>
+    <string name="string_project_charger_phone">单位负责人电话</string>
+    <string name="string_project_manager">单位管理员</string>
+    <string name="string_project_manager_phone">单位管理员电话</string>
+    <string name="string_project_notification_mode">语音方式</string>
+    <string name="string_project_notification_voice">语音通知</string>
+    <string name="string_project_notification_message">短信通知</string>
+    <string name="string_project_base_detail">单位详情</string>
+    <string name="string_project_logo">单位logo</string>
+    <string name="common_string_male">男</string>
+    <string name="common_string_female">女</string>
+    <!-- contacts -->
+    <string name="string_linkman_detail"><Data><![CDATA[%s<font color="#35B5F7"><u>%s</u></font>]]></Data></string>
+    <string name="string_linkman_contact">通讯录</string>
+    <string name="string_linkman_name_hint">请输入联系人姓名</string>
+    <string name="string_linkman_phone_hint">请输入联系人号码</string>
+    <string name="fail_to_get_contact">联系人获取失败，请重新选择</string>
+    <string name="string_contact_wrong_format">联系人格式错误</string>
+
+    <!-- home -->
+    <string name="home_near_fire">近15天火警&amp;故障数量情况</string>
+    <string name="home_actual">信息</string>
+    <string name="home_real_time">实时</string>
+    <string name="home_backlog">待办</string>
+    <string name="home_add_user">增添用户</string>
+    <string name="home_entry_point">录入点位</string>
+    <string name="home_task">任务巡查</string>
+    <string name="home_device">查看设备</string>
+    <string name="home_hidden_danger">隐患上报</string>
+    <string name="home_add_area">添加区域</string>
+    <string name="home_site_entry">添加场所</string>
+    <string name="home_add_device">添加设备</string>
+    <string name="home_infrastructure">基础设施</string>
+    <string name="home_now_online">在线数</string>
+    <string name="home_now_alarm">火警数</string>
+    <string name="home_now_offline">离线数</string>
+    <string name="home_stat_area">管辖区域</string>
+    <string name="home_stat_device">设备列表</string>
+    <string name="home_stat_account">账户管理</string>
+    <string name="home_stat_point">巡查点位</string>
+    <string name="home_stat_inspection">巡查任务</string>
+    <string name="home_stat_history">历史告警</string>
+    <string name="home_stat_place">场所列表</string>
+    <string name="home_head_msg">消息</string>
+    <string name="home_head_fire">火警</string>
+    <string name="home_head_fault">故障</string>
+    <string name="home_chart_week">7天</string>
+    <string name="home_chart_month">15天</string>
+    <string name="string_line_fire">火警</string>
+    <string name="string_line_fault">故障</string>
+    <string name="string_line_fire_count">火警%s条</string>
+    <string name="string_line_fault_count">故障%s条</string>
+
+    <!-- fire alarm -->
+    <string name="fire_alarm">消防报警</string>
+    <string name="fire_unit">报警单位</string>
+    <string name="fire_area">报警区域</string>
+    <string name="fire_venue">火灾场所</string>
+    <string name="alarm_time">报警时间</string>
+    <string name="alarm_status">警情状态</string>
+    <string name="review">复核</string>
+    <string name="fire_point">报警点位</string>
+    <string name="fire_video">警情监控</string>
+    <string name="alarm_device">设备详情</string>
+
+    <string name="ellipsis">... ...</string>
+    <string name="capture">扫码识别</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="record_video">录制视频</string>
+    <string name="play_video">播放视频</string>
+    <string name="refresh">刷新</string>
+    <string name="plan">平面图</string>
+    <string name="save">保存</string>
+    <string name="examine">查看</string>
+    <string name="dialog_yes">确定</string>
+    <string name="dialog_no">取消</string>
+    <string name="photo_album">相册</string>
+    <string name="flash_light">闪光灯</string>
+    <string name="manual_input">手动输入</string>
+    <string name="next">下一步</string>
+    <string name="colon">：</string>
+
+    <!-- search -->
+    <string name="search">搜索</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_delete_all">全部删除</string>
+
+    <!-- hint -->
+    <string name="hint">提示</string>
+    <string name="hint_null_phone">请填写电话号码</string>
+    <string name="hint_error_phone">电话号码格式有误</string>
+    <string name="hint_null_place_name">请填写场所名称</string>
+    <string name="hint_null_unit_name">请填写区域名称</string>
+    <string name="hint_null_unit_address">请填写区域地址</string>
+    <string name="hint_null_unit">请选择所属单位</string>
+    <string name="hint_null_lcation">请选择所在位置</string>
+    <string name="hint_marker_map">可点击地图标记所在位置</string>
+    <string name="hint_descriptor">请填写描述信息(50字以内)</string>
+    <string name="hint_search">请输入搜索关键字</string>
+    <string name="hint_quit_title">是否退出扫描二维码？</string>
+    <string name="hint_accessory_type">请选择要添加的附件类型</string>
+    <string name="hint_password">确保它是8~15个字符,包括数字和小写字母。</string>
+    <string name="hint_passwd_ps">注意：请输入8-15位字符,包含大小写字母、数字和特殊字符中的三种以上</string>
+    <string name="hint_copyright">中消云物联网科技研究院</string>
+    <string name="hint_delete">是否确认删除？</string>
+    <string name="hint_check_device">未选择任何设备！</string>
+    <string name="hint_enter_names">请输入巡查点名称</string>
+    <string name="hint_select_type">请选择巡查项类型</string>
+    <string name="hint_clock_in_type">请选择打卡类型</string>
+    <string name="hint_clock_area">请选择所在区域</string>
+    <string name="hint_date_of_manufacture">生产日期</string>
+    <string name="hint_durable_years">请输入使用年限</string>
+    <string name="hint_facility_type">请选择设施类型</string>
+    <string name="hint_scan_tag_id">请扫描标签获取编号</string>
+    <string name="hint_point_location">请输入巡查点位置</string>
+    <string name="hint_patrol_project">巡检项不能为空</string>
+    <string name="hint_sign_in_type">请选择签到类型</string>
+    <string name="hint_delete_device_title">删除设备</string>
+    <string name="hint_delete_device_msg">是否确认删除设备？</string>
+    <string name="hint_unassign_device_title">取消分配</string>
+    <string name="hint_unassign_device_msg">是否确认取消分配？</string>
+    <string name="hint_device_type_msg">若设备类型与实际类型不符可能导致设备无法报警</string>
+    <string name="hint_device_type_toast">请选择设备类型</string>
+    <string name="hint_device_type_choose">选择设备类型</string>
+    <string name="hint_device_system">选择设备所属系统</string>
+
+    <!-- toast -->
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="toast_device_not_activated">设备未激活</string>
+    <string name="toast_permissions_error">暂无权限</string>
+    <string name="toast_accessory_error">请上传异常信息，以供参考</string>
+    <string name="toast_task_project_state">请选择每个巡查项目的状态</string>
+    <string name="toast_checkpoint_completed">该任务巡查点已完成巡查！</string>
+    <string name="toast_cont_null">不能为空！</string>
+    <string name="toast_no_data">暂无数据！</string>
+    <string name="toast_tag_number_verify">该巡查点已录入！</string>
+    <string name="toast_error_information">请填写异常信息！</string>
+    <string name="toast_information_limit">输入超出字数限制！</string>
+    <string name="toast_add_poin_point">请在平面图上标记点位！</string>
+    <string name="toast_select_channel_type">请选择通道类型</string>
+    <string name="toast_acquisition_unit">请输入采集单位</string>
+    <string name="toast_channel_number">请输入通道号</string>
+    <string name="toast_channel_factor">请输入放大倍数，不能小于1</string>
+    <string name="toast_channel_max_range">请输入采集上限（0~99999）</string>
+    <string name="toast_channel_min_range">请输入采集下限（0~99999）</string>
+    <string name="toast_channel_min_range_greater_max_range">采集上限需大于采集下限</string>
+    <string name="toast_channel_min_alarm_greater_max_alarm">报警上限需大于报警下线</string>
+    <string name="toast_channel_min_or_max_alarm_wrong">报警上下限取值范围：0~99999</string>
+
+    <string name="test_push_msg">烟雾探测器火灾报警提示</string>
+    <string name="fault">故障</string>
+    <string name="event">事件</string>
+    <string name="alarm">报警</string>
+
+    <!-- subtitle -->
+    <string name="title_profile_picture">头像：</string>
+    <string name="title_login_id">登录账号：</string>
+    <string name="title_position">用户角色：</string>
+    <string name="title_user_name">真实姓名：</string>
+    <string name="title_sex">用户性别：</string>
+    <string name="title_birthday">出生日期：</string>
+    <string name="title_mobile_phone">手机号码：</string>
+    <string name="title_email_address">邮箱：</string>
+    <string name="title_copyright_information">版权信息：</string>
+    <string name="title_alert_unit">报警单位：</string>
+    <string name="title_alarm_time">报警时间：</string>
+    <string name="title_contacts">联系人：</string>
+    <string name="title_device_name">设备名称：</string>
+    <string name="title_device_code">设备编码：</string>
+    <string name="title_device_status">设备状态：</string>
+    <string name="title_device_system">所属系统：</string>
+    <string name="title_device_model">设备型号：</string>
+    <string name="title_gateway_name">所属设备：</string>
+    <string name="title_affiliated_place">所属场所：</string>
+    <string name="title_alarm_state">火警状态：</string>
+    <string name="title_install_details">安装详情：</string>
+    <string name="title_start_running_date">投运日期：</string>
+    <string name="title_device_number">设备编号：</string>
+    <string name="title_installation">安装位置：</string>
+    <string name="title_validity">服务截止日期：</string>
+    <string name="title_place_name">场所名称：</string>
+    <string name="title_affiliated_unit">所属单位：</string>
+    <string name="title_address">所在地址：</string>
+    <string name="title_binding_device">绑定设备：</string>
+    <string name="title_area_name">区域名称：</string>
+    <string name="title_place_number">场所数量：</string>
+    <string name="title_area_number">区域数量：</string>
+    <string name="title_administrator">管理员：</string>
+    <string name="title_device_count">设备数量：</string>
+    <string name="title_device_video">视频联动：</string>
+    <string name="title_device_channels">通道数：</string>
+    <string name="title_device_plan">设备平面图：</string>
+    <string name="title_device_imei">IMEI：</string>
+    <string name="title_offline_online">在线/离线：</string>
+    <string name="title_note">备注信息：</string>
+    <string name="title_point_entry">点位录入：</string>
+    <string name="title_fire_count">火警数：</string>
+    <string name="title_fire_review_count">复核数：</string>
+    <string name="title_risk_count">隐患数：</string>
+    <string name="title_alarm_false_count">误报数：</string>
+    <string name="title_number_of_defect">故障数：</string>
+    <string name="title_patrol_count">巡查总数：</string>
+    <string name="title_finish_patrol_count">完成巡查数：</string>
+    <string name="title_online_state">在线状态：</string>
+    <string name="title_last_connect_time">最后连接：</string>
+    <string name="title_add_affiliated_unit">* 所属单位：</string>
+    <string name="title_add_area_name">* 区域名称：</string>
+    <string name="title_add_control_limit">* 区域地址：</string>
+    <string name="title_add_administrator_phone">* 管理员电话：</string>
+    <string name="title_add_parent_area">管辖区域：</string>
+    <string name="title_add_place_name">* 场所名称：</string>
+    <string name="title_add_place_address">所在地址：</string>
+    <string name="title_area_level">区域类型：</string>
+    <string name="title_existing_equipment">现有设备：</string>
+    <string name="title_add_device_name">* 设备名称：</string>
+    <string name="title_patrol_indicators">巡查指标：</string>
+    <string name="title_patrol_situation">巡查情况：</string>
+    <!--客服电话-->
+    <string name="title_hotline_number">客服电话：4000&#8211;220&#8211;119</string>
+    <string name="title_hotline_operating_hours">工作时间：08:30&#8211;17:30（周一至周五）</string>
+
+    <!--StringSelectFragment-->
+    <string name="string_select_title_device_type">设备类型</string>
+    <string name="string_select_title_device_mode">设备型号</string>
+    <string name="string_select_title_device_system">所属系统</string>
+    <string name="string_select_title_patrol_item_type">巡查项类型</string>
+    <string name="string_select_title_facility_type">设施类型</string>
+
+    <!--Service-->
+    <string-array name="service_menu">
+        <item>设备安装</item>
+        <item>设备巡查</item>
+        <item>视频信息</item>
+        <item>系统管理</item>
+        <item>账号管理</item>
+        <item>运行记录</item>
+        <item>单位信息</item>
+        <item>设备信息</item>
+        <item>监督上报</item>
+        <item>隐患列表</item>
+        <item>消防维保</item>
+        <item>宣传教育</item>
+    </string-array>
+    <string name="serview_install_and_maintain">安装与维护</string>
+    <string-array name="ser_install">
+        <item>区域列表</item>
+        <item>场所列表</item>
+        <item>设备列表</item>
+    </string-array>
+    <string name="serview_patrol_and_hidden">巡查与隐患</string>
+    <string-array name="ser_patrol">
+        <!--<item>执行任务</item>-->
+        <item>巡查点位</item>
+        <item>任务列表</item>
+        <item>上报隐患</item>
+        <item>待办隐患</item>
+        <item>已办隐患</item>
+    </string-array>
+    <string name="serview_else">其他</string>
+    <string-array name="ser_else">
+        <item>视频信息</item>
+        <!--<item>账号管理</item>-->
+        <item>运行记录</item>
+        <item>单位信息</item>
+        <!--<item>消防维保</item>-->
+        <!--<item>宣传教育</item>-->
+    </string-array>
+    <string name="string_service_risk_report">上报隐患</string>
+    <string name="string_service_risk_notice">隐患详情</string>
+    <string name="search_risk_list">隐患列表</string>
+    <!--risk_level_array-->
+    <string name="array_risk_level_1">一级隐患</string>
+    <string name="array_risk_level_2">二级隐患</string>
+    <string name="array_risk_level_3">三级隐患</string>
+
+    <!--risk_state_array-->
+    <string name="array_risk_state_no_rectification">未整改</string>
+    <string name="array_risk_state_rectification">整改中</string>
+    <string name="array_risk_state_pending_acceptance">已整改，待验收</string>
+    <string name="array_risk_state_pending_qualified">验收合格</string>
+    <string name="array_risk_state_pending_unqualified">验收不合格</string>
+
+    <!--隐患详情-->
+    <string name="string_risk_detail_title">隐患详情</string>
+    <string name="string_risk_report_img">上报图片：</string>
+    <string name="string_risk_report_video">上报视频：</string>
+    <string name="string_risk_report_voice">上报语音：</string>
+    <string name="string_risk_implement_user">执行人员：</string>
+    <string name="string_risk_implement_time">执行时间：</string>
+    <string name="string_risk_report_level">隐患等级：</string>
+    <string name="string_risk_report_source">隐患来源：</string>
+    <string name="string_risk_report_user">上报人：</string>
+    <string name="string_risk_report_time">上报时间：</string>
+    <string name="string_risk_notice_existing_problems">存在问题：</string>
+    <string name="string_risk_notice_info">经%s消防安全现场检查，你单位存在下属主要问题。限于%s前整改，并将整改完成情况于整改后%s日内填好“隐患整改反馈单”报至监督管理人员</string>
+
+    <!--隐患通知书-->
+    <string name="string_risk_to_do_title">待办隐患</string>
+    <string name="string_risk_done_title">已办隐患</string>
+    <string name="string_risk_to_do_detail_title">待办隐患详情</string>
+    <string name="string_risk_done_detail_title">已办隐患详情</string>
+
+    <!--隐患整改进度-->
+    <string name="string_risk_progress_title">整改进度</string>
+    <string name="string_risk_progress_detail_title">整改详情</string>
+    <string name="string_risk_progress_report_title">信息提交</string>
+    <string name="string_risk_progress_process_user">执行人员</string>
+    <string name="string_risk_progress_process_time">执行时间</string>
+    <string name="string_risk_progress_process_description">问题描述</string>
+
+    <!--隐患上报-->
+    <string name="string_risk_title">隐患上报</string>
+    <string name="string_risk_description">隐患描述：</string>
+    <string name="string_risk_description_hint">请输入隐患描述</string>
+    <string name="string_risk_title_input">隐患标题：</string>
+    <string name="string_risk_level">隐患级别：</string>
+    <string name="string_risk_rectification_state">隐患状态：</string>
+    <string name="string_risk_project">隐患单位：</string>
+    <string name="string_risk_address">隐患地址：</string>
+    <string name="string_risk_title_input_hint">隐患标题</string>
+    <string name="string_risk_project_hint">请选择隐患单位</string>
+    <string name="string_risk_address_hint">隐患详细地址</string>
+    <string name="string_risk_img">图片</string>
+    <string name="string_risk_video">视频</string>
+    <string name="string_risk_voice">语音</string>
+
+    <!--隐患搜索-->
+    <string name="string_risk_resource_title">隐患来源：</string>
+    <string name="string_risk_resource_patrol">巡查上报</string>
+    <string name="string_risk_resource_supervise">监督上报</string>
+    <string name="string_risk_resource_social">社会上报</string>
+
+    <string name="string_risk_state_title">隐患状态：</string>
+
+    <!-- statistics -->
+    <string name="fire_alarm_status">火警状态</string>
+    <string name="check_fire_alarm">火警复核</string>
+    <string name="equipment_failure_analysis">设备故障</string>
+    <string name="equipment_type_alarm">报警类型</string>
+    <string name="alarm_false_positives">火警误报</string>
+    <string name="hidden_trouble_statistics">隐患统计</string>
+    <string name="inspect_statistical">巡查统计</string>
+    <string name="online_analysis">在线分析</string>
+
+    <string-array name="record_menu">
+        <item>火警</item>
+        <item>预警</item>
+        <item>故障</item>
+        <item>事件</item>
+        <item>隐患</item>
+        <item>离线</item>
+    </string-array>
+
+    <!--fire_review_array-->
+    <string name="array_true_fire">真实火警</string>
+    <string name="array_false_fire">火警误报</string>
+    <string name="array_test_fire">测试火警</string>
+    <string name="array_not_review">未复核</string>
+
+    <!--fire_review_count_array-->
+    <string name="array_review_count">复核数</string>
+    <string name="array_fire_count">火警数</string>
+
+    <string name="device_fault_count">故障数</string>
+    <string name="device_misinformation_count">误报数</string>
+
+    <!--online_array-->
+    <string name="array_online">在线</string>
+    <string name="array_offline">离线</string>
+
+
+    <string name="picture_preview">图片预览</string>
+
+    <!--APP升级-->
+    <string name="dialog_update_now">APP发现新的版本</string>
+    <string name="dialog_update_discovers_new_version">是否升级？</string>
+    <string name="toast_is_latest_version">当前已是最新版本</string>
+
+
+    <!--文件上传的时候，防止文件未完整上传提示弹窗-->
+    <string name="dialog_file_upload_title">文件上传中</string>
+    <string name="dialog_file_upload_content">有文件正在上传，若提交可能导致文件上传失败</string>
+
+    <!--更新服务-->
+    <string name="update_service_begin_update">开始更新</string>
+    <string name="update_service_download_speed_of_progress">下载进度</string>
+    <string name="update_service_download_update_failed_and_download_again">更新失败，请重新下载</string>
+    <string name="update_service_download_update_failed">更新失败</string>
+    <string name="update_service_download_update_completed">下载完成</string>
+
+    <!--获取通知栏显示权限-->
+    <string name="notification_set_title">通知权限申请</string>
+    <string name="notification_set_content">需要获取通知栏权限，以便在发生警情时第一时间向您展示详细信息</string>
+
+    <!--关于APP-->
+    <string name="about_app">关于我们</string>
+    <string name="check_new_version">检测更新</string>
+    <string name="current_version">当前版本：</string>
+    <string name="us_info">\u3000\u3000火知眼助手APP是一款为消防联网单位、安装人员、巡查人员设计的一款辅助工具应用，使用它消防主管部门、消防联网单位可以对警情状态进行监督、以及单位的网格化管理（区域、场所），安装人员可以安装设备以及新增区域和场所，巡查人员可以用以执行巡查任务，以及所有人员都可以进行隐患的监督上等操作。并实现消防操作全程记录，警情处理流程跟踪监管理、以及消防数据的整合和智能分析。</string>
+
+    <!--搜索页-->
+    <string name="search_hint">请输入搜索关键字</string>
+    <string name="device_search_hint">请输入设备相关关键字</string>
+    <string name="search_place_list">场所列表</string>
+    <string name="search_device_list">设备列表</string>
+    <string name="search_project_list">单位列表</string>
+    <string name="search_area_list">区域列表</string>
+    <string name="search_record_list">日志列表</string>
+    <string name="search_list">列表</string>
+    <!--popup-->
+    <string name="popup_album">去相册选择</string>
+
+    <string name="toast_risk_report_data_incomplete">图片、视频、语音需至少提交一个</string>
+
+    <!--span-->
+    <string name="string_space_span">\u3000\u3000%s</string>
+    <string name="toast_logout">退出登录成功</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/style_item_delete_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/card_pading"
+    tools:ignore="RtlSymmetry,SpUsage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_expend"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/card_pading"
+            android:paddingTop="@dimen/card_pading"
+            android:paddingBottom="@dimen/card_pading">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:ellipsize="end"
+                android:lineSpacingExtra="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_gray_text"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/item_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/color_gray_text"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_expend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:padding="@dimen/button_margin"
+            android:layout_alignBottom="@+id/ll_index"
+            android:src="@drawable/ic_keyboard_return_black_24dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

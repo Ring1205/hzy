@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="@string/ready_to_scan"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_nfc"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_scan"
+            android:tint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/scan_init"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="match_parent"
+            android:layout_margin="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="@string/start_scan"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

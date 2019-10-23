@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxycloud.common">
+
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 要求当前设备必须要有NFC芯片 -->
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application/>
+
+</manifest>

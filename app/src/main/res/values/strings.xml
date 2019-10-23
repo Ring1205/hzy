@@ -1,0 +1,657 @@
+<resources>
+    <string name="app_name">NoFire-aid</string>
+
+    <string name="press_again_exit">Press again to exit</string>
+
+    <string name="home">Home</string>
+    <string name="count">Count</string>
+    <string name="service">Service</string>
+    <string name="mine">Mine</string>
+
+    <string name="change_password">Change Password</string>
+    <string name="change_phone_number">Change Phone Number</string>
+    <string name="add_phone_num">Add Phone Number</string>
+    <string name="modify_mailbox">Modify Mailbox</string>
+    <string name="add_email_adds">Add Email</string>
+    <string name="common_problem">Common Problem</string>
+    <string name="safety_fire_knowledge">Safety Fire Knowledge</string>
+    <string name="consumer_hotline">Service Hotline</string>
+    <string name="service_agreement">Service Agreement</string>
+    <string name="switch_project">Switch Project</string>
+    <string name="about_us">About Us</string>
+    <string name="quit">QUIT</string>
+
+    <!-- mine -->
+    <string name="modify_password">Update password</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="confirm_mailbox">Confirm E-mail Address</string>
+    <string name="new_modify_mailbox">New E-mail Address</string>
+    <string name="confirm_phone">Confirm mobile phone number</string>
+    <string name="new_phone_number">New phone number</string>
+    <string name="display_password">Display password</string>
+    <string name="forget_password">Forget password</string>
+    <!--<string name="login_id">Login account :</string>-->
+    <string name="login_account">Login account</string>
+    <!--<string name="profile_picture">Profile picture</string>-->
+    <string name="your_position">Your position</string>
+    <!--<string name="user_name">User name :</string>-->
+    <string name="your_name">Your name</string>
+    <!--<string name="sex">sex</string>-->
+    <string name="your_gender">Your gender</string>
+    <string name="your_birthday">Your birthday</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="e_mail_address">E-mail address</string>
+    <string name="all_project">All Project</string>
+    <string name="confirm_exit">Confirm exit</string>
+    <string name="user_exit">Exiting the current account will not synchronize the alarm info</string>
+    <string name="logout_user">Logout user?</string>
+    <string name="confirm_cancellation">Confirm Cancellation</string>
+    <string name="canellation_specification">Logging out of the current account will lose all administrative</string>
+    <string name="select_units">Select Units</string>
+    <string name="select_area">Select Area</string>
+    <string name="select_place">Select Place</string>
+
+    <!--WebView-->
+    <string name="web_view_title_question">Details</string>
+
+    <!-- service -->
+    <string name="install">Installation</string>
+    <string name="records">Records</string>
+    <string name="videos">Video information</string>
+    <string name="project_message">Project information</string>
+
+    <!-- install -->
+    <string name="device_list">Device List</string>
+    <string name="place_list">Place List</string>
+    <string name="area_list">Area List</string>
+    <string name="infrastructure">Infrastructure</string>
+
+    <!-- users -->
+    <string name="users_list">Users List</string>
+    <string name="user_id">User ID</string>
+    <string name="users_name">User Name</string>
+    <string name="users_state">Logging</string>
+    <string name="user_info">Userinfo</string>
+
+    <!-- patrol -->
+    <string name="task_detail">Task Datail</string>
+    <string name="inspection_point">Inspection Point</string>
+    <string name="patrol_project">Project</string>
+    <string name="clock_time">Clock Time</string>
+    <string name="task_list">Task List</string>
+    <string name="tag_position">Location</string>
+
+    <!-- task -->
+    <string name="task_no_started">NotStarted</string>
+    <string name="task_under_way">InProgress</string>
+    <string name="task_off_the_stocks">Completed</string>
+    <string name="task_unfinished">NotCompleted</string>
+    <string name="task_expired">Expired</string>
+    <string name="task_clock_in">Clock In</string>
+    <string name="scan_nfc">NFC</string>
+    <string name="scan_qr_code">QR Code</string>
+    <string name="patrol_task">Patrol Task</string>
+    <string name="task_time_limit">Time</string>
+    <string name="patrol_progress">Progress</string>
+    <string name="inspectors">Inspectors</string>
+    <string name="scan_search">ScanSearch</string>
+    <string name="inspection_method">Inspect way</string>
+    <string name="tap_all">All</string>
+    <string name="tap_task_dns">DNS</string>
+    <string name="tap_task_doing">Doing</string>
+    <string name="tap_task_done">Done</string>
+    <string name="tap_task_stale">Stale</string>
+
+    <!-- point -->
+    <string name="point_add">ADD</string>
+    <string name="point_change">Change</string>
+    <string name="point_finish">Finish</string>
+    <string name="point_list">Point List</string>
+    <string name="add_point">Add Task Point</string>
+    <string name="change_point">Change Task Point</string>
+    <string name="point_name">Point Name</string>
+    <string name="point_location">Location</string>
+    <string name="point_detail">Check Point Details</string>
+    <string name="patrol_type">Patrol item type</string>
+    <string name="patrol_made_date">Made Date</string>
+    <string name="patrol_start_date">Date Used</string>
+    <string name="sign_in_type">Sign in type</string>
+
+    <string name="work_check_all">Qualified</string>
+    <string name="work_check_normal_or_warn">Normal/Abnormal</string>
+    <string name="work_state_normal">Normal</string>
+    <string name="work_state_warn">Abnormal</string>
+    <string name="work_state_unchecked">Unchecked</string>
+    <string name="point_unqualified_records">Unqualified Records</string>
+    <string name="point_qualified_records">Qualified Records</string>
+    <string name="submit_task">SUBMIT</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="submit_error_message">Abnormal Information</string>
+    <string name="stick">Stick</string>
+
+    <!-- record -->
+    <string name="string_alert_project">Fire Unit :</string>
+    <string name="string_alert_place">Alarm Place :</string>
+    <string name="string_alert_installation">Alarm location :</string>
+    <string name="string_alert_device_type">Device Type :</string>
+    <string name="string_alert_linkman">Contacts :</string>
+    <string name="string_device_adapter_title">Subdevice list :</string>
+    <string name="string_device_adapter_state">Subdevice status :</string>
+
+    <!--alert detail-->
+    <!--Sketch-->
+    <string name="string_alert_project_name">Unit :</string>
+    <string name="string_alert_area_name">Area :</string>
+    <string name="string_alert_place_name">Place :</string>
+    <string name="string_alert_time">Time :</string>
+
+    <string name="string_alert_fire_title">Fire detail</string>
+    <!--预警需要国际部翻译-->
+    <string name="string_alert_prefire_title">Warning details</string>
+    <string name="string_alert_alert_type">Fire alarm types :</string>
+    <string name="string_alert_happen_time">Happen time :</string>
+    <string name="string_alert_device_install">Install location :</string>
+    <string name="string_alert_reviewer">reviewer :</string>
+    <string name="string_alert_review_time">Review time :</string>
+    <string name="string_alert_review_result">Review result :</string>
+    <string name="common_string_switch_project">Switch Project</string>
+    <string name="string_alert_floor_plan">Fire alarm location</string>
+    <string name="string_alert_video">Video linkage</string>
+    <string name="string_alert_device_detail">Device details</string>
+    <string name="string_alarm_false_count">Count off by mistake :</string>
+
+    <!-- detail -->
+    <string name="detail_description">Description</string>
+    <string name="detail_patrol_note">Note</string>
+    <string name="detail_pictures">Pictures</string>
+
+    <!-- histroy -->
+    <string name="histroy_details">Histroy Details</string>
+
+    <!-- device -->
+    <string name="device_message">Device Message</string>
+    <string name="device_details">Device Detail</string>
+    <string name="device_install_details">Install Details</string>
+    <string name="device_base_information">Information</string>
+    <string name="belongs_place">Belongs Place</string>
+    <string name="device_default_place">The default location</string>
+    <string name="device_plan">Device Plan</string>
+    <string name="device_accessory">Add Accessory</string>
+    <string name="accessory">Accessory</string>
+    <string name="device_record">Record</string>
+    <string name="device_video">Video</string>
+    <string name="device_photograph">Photo</string>
+    <string name="device_picture">picture</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="long_click_delete">Long press delete</string>
+    <string name="device_assign">Allocate Device</string>
+    <string name="device_unallocated">Unallocated</string>
+    <string name="device_allocated">Allocated</string>
+    <string name="device_install_list">Install list</string>
+    <string name="fire_detection_and_alarm_system">Fire detection and alarm systems</string>
+    <string name="device_allocation_type">Type of distribution</string>
+    <string name="device_allocation_type_msg">Whether gateways and devices are allocated in batches!</string>
+    <string name="device_allocation_type_right">Separate distribution</string>
+    <string name="device_allocation_type_left">Mass distribution</string>
+    <string name="device_allocation_type_gateway_msg">Whether to update all devices under the gateway!</string>
+    <string name="device_allocation_type_gateway_left">All devices</string>
+    <string name="device_allocation_type_gateway_right">Unallocated</string>
+
+    <!--channel-->
+    <string name="string_channel_title">Channel List</string>
+    <string name="channels_add">Add channel</string>
+    <string name="channels_edit">Edit channel</string>
+    <string name="channels_type">Channel type</string>
+    <string name="channels_unit">Acquisition unit</string>
+    <string name="channels_code">Channel number</string>
+    <string name="channels_amplification_factor">Amplification factor</string>
+    <string name="channels_install_location">Installation site</string>
+    <string name="channels_install_max_range">Upper limit of acquisition</string>
+    <string name="channels_install_min_range">Lower limit of acquisition</string>
+    <string name="channels_install_max_alarm">Upper limit of alarm</string>
+    <string name="channels_install_min_alarm">Lower limit of alarm</string>
+
+    <!-- place -->
+    <string name="place_details">Place Details</string>
+    <string name="add_place">Add Place</string>
+    <string name="devices_count">Equipment Number</string>
+    <string name="place_name">Place Name</string>
+    <string name="place_address">Address</string>
+    <string name="place_device">Alone Device</string>
+    <string name="place_adapter">Combined Gateway</string>
+
+    <!-- area -->
+    <string name="area_details">Area Details</string>
+    <string name="menu_contacts">Contacts</string>
+    <string name="select_parent_area">Add parent area(optional)</string>
+    <string name="area_level_first">Level 1 area</string>
+    <string name="area_level_second">Level 2 area</string>
+    <string name="area_level_third">Level 3 area</string>
+
+    <!-- unit -->
+    <string name="string_project_base_information">Basic Information</string>
+    <string name="string_project_name">Project Name</string>
+    <string name="string_project_type">Project Type</string>
+    <string name="string_project_region">Administrative Region</string>
+    <string name="string_project_address">Project Address</string>
+    <string name="string_project_monitoring_range">Monitoring Range</string>
+    <string name="string_project_charger">Project Leader</string>
+    <string name="string_project_charger_phone">Principal Telephone</string>
+    <string name="string_project_manager">Project Administrator</string>
+    <string name="string_project_manager_phone">Administrator Telephone</string>
+    <string name="string_project_notification_mode">Voice Mode</string>
+    <string name="string_project_notification_voice">Voice Notification</string>
+    <string name="string_project_notification_message">Short Message</string>
+    <string name="string_project_base_detail">Project Details</string>
+    <string name="string_project_logo">Project Logo</string>
+    <string name="common_string_male">Boy</string>
+    <string name="common_string_female">Girl</string>
+
+    <!-- contacts -->
+    <string name="string_linkman_detail"><Data><![CDATA[%s<font color="#35B5F7"><u>%s</u></font>]]></Data></string>
+    <string name="string_linkman_contact">Address book</string>
+    <string name="string_linkman_name_hint">Please enter the contact name</string>
+    <string name="string_linkman_phone_hint">Please enter the contact number</string>
+    <string name="fail_to_get_contact">Contact acquisition failed. Please select again</string>
+    <string name="string_contact_wrong_format">Wrong contact format</string>
+
+    <!-- home -->
+    <string name="home_near_fire">Nearly 15 days of fire &amp; failure</string>
+    <string name="home_actual">Actual</string>
+    <string name="home_real_time">Real Time</string>
+    <string name="home_backlog">Backlog</string>
+    <string name="home_add_user">User</string>
+    <string name="home_entry_point">Point</string>
+    <string name="home_task">Task</string>
+    <string name="home_device">Device</string>
+    <string name="home_hidden_danger">Hidden danger</string>
+    <string name="home_add_area">Add area</string>
+    <string name="home_site_entry">Site entry</string>
+    <string name="home_add_device">Add equipments</string>
+    <string name="home_infrastructure">Infrastructure</string>
+    <string name="home_now_online">Online</string>
+    <string name="home_now_alarm">Alarm</string>
+    <string name="home_now_offline">Offline</string>
+    <string name="home_stat_area">Area</string>
+    <string name="home_stat_device">Device</string>
+    <string name="home_stat_place">Place</string>
+    <string name="home_stat_account">Account</string>
+    <string name="home_stat_point">Point</string>
+    <string name="home_stat_inspection">Inspection</string>
+    <string name="home_stat_history">History</string>
+    <string name="home_head_msg">News</string>
+    <string name="home_head_fire">Fire</string>
+    <string name="home_head_fault">Fault</string>
+    <string name="home_chart_week">Week</string>
+    <string name="home_chart_month">Month</string>
+
+    <string name="string_line_fire">Fire Alarm</string>
+    <string name="string_line_fault">Fault</string>
+    <string name="string_line_fire_count">Fire %s</string>
+    <string name="string_line_fault_count">Fault %s</string>
+
+    <!-- fire alarm -->
+    <string name="fire_alarm">Fire Alarm</string>
+    <string name="fire_unit">Fire Unit</string>
+    <string name="fire_area">Fire Area</string>
+    <string name="fire_venue">Fire Venue</string>
+    <string name="alarm_time">Alarm Time</string>
+    <string name="alarm_status">Alarm State</string>
+    <string name="review">Review</string>
+    <string name="fire_point">Fire alarm</string>
+    <string name="fire_video">Monitoring</string>
+    <string name="alarm_device">Fire Device</string>
+
+    <!-- search -->
+    <string name="search">Search</string>
+    <string name="search_history">Search History</string>
+    <string name="search_delete_all">Delete All</string>
+
+    <string name="ellipsis">... ...</string>
+    <string name="coming_soon">Coming soon"</string>
+    <string name="capture">Capture</string>
+    <string name="record_video">Record Video</string>
+    <string name="play_video">Play Video</string>
+    <string name="refresh">Refresh</string>
+    <string name="plan">Plan</string>
+    <string name="save">Save</string>
+    <string name="examine">Examine</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="photo_album">PHOTO</string>
+    <string name="flash_light">LIGHT</string>
+    <string name="manual_input">INPUT</string>
+    <string name="next">Next</string>
+    <string name="colon"> :</string>
+
+    <!-- hint -->
+    <string name="hint">Hint</string>
+    <string name="hint_null_phone">Fill in your telephone number, please.</string>
+    <string name="hint_error_phone">The phone number is misformatted</string>
+    <string name="hint_null_place_name">Please fill in the name of the place.</string>
+    <string name="hint_null_unit_name">Please fill in the name of the area.</string>
+    <string name="hint_null_unit_address">Please fill in the regional address.</string>
+    <string name="hint_null_lcation">Please select the location.</string>
+    <string name="hint_null_unit">Please select your organization.</string>
+    <string name="hint_marker_map">Click on the map to mark the location.</string>
+    <string name="hint_descriptor">Please fill out the description information</string>
+    <string name="hint_search">Please enter your search keywords</string>
+    <string name="hint_quit_title">Whether to exit the scan?</string>
+    <string name="hint_accessory_type">Please select the attachment type to add.</string>
+    <string name="hint_password">6~15 characters , Case sensitive letters.</string>
+    <string name="hint_passwd_ps">PS: Make sure it\'s more than 15 characters OR at least 6 characters including number, lowercase letter and special characters. </string>
+    <string name="hint_copyright">Zhongxiao cloud institute of Internet of things technology</string>
+    <string name="hint_delete">Are you sure to delete it?</string>
+    <string name="hint_check_device">No device selected!</string>
+    <string name="hint_enter_names">Please enter the name of the point!</string>
+    <string name="hint_select_type">Please select the patrol item type!</string>
+    <string name="hint_clock_in_type">Please select the type of punch card!</string>
+    <string name="hint_clock_area">Please select the area!</string>
+    <string name="hint_date_of_manufacture">Production date!</string>
+    <string name="hint_durable_years">Please enter service life!</string>
+    <string name="hint_facility_type">Please select facility type!</string>
+    <string name="hint_scan_tag_id">Please scan the label for the number!</string>
+    <string name="hint_point_location">Please enter the location of the point!</string>
+    <string name="hint_patrol_project">Item cannot be empty!</string>
+    <string name="hint_sign_in_type">Please select the check-in type!</string>
+    <string name="hint_delete_device_title">Delete Device</string>
+    <string name="hint_delete_device_msg">Confirm whether to delete the device?</string>
+    <string name="hint_unassign_device_title">Unassign</string>
+    <string name="hint_unassign_device_msg">Confirm whether to cancel allocation?</string>
+    <string name="hint_device_type_msg">If the equipment type does not match the actual type, it may cause the equipment to fail to alarm</string>
+    <string name="hint_device_type_toast">Please select the device type</string>
+    <string name="hint_device_type_choose">Selection of device type</string>
+    <string name="hint_device_system">Select the system to which the device belongs</string>
+
+    <!-- toast -->
+    <string name="no_result">Sorry, no relevant data was found!</string>
+    <string name="toast_device_not_activated">Device not activated.</string>
+    <string name="toast_permissions_error">Permissions error.</string>
+    <string name="toast_accessory_error">In case of any abnormality, please upload at least one attachment (picture, video, recording) for your reference</string>
+    <string name="toast_task_project_state">Please select the status of each inspection item!</string>
+    <string name="toast_checkpoint_completed">The mission checkpoint has been completed!</string>
+    <string name="toast_cont_null">can not be empty!</string>
+    <string name="toast_no_data">No Data!</string>
+    <string name="toast_tag_number_verify">The inspection point has been recorded!</string>
+    <string name="toast_error_information">Please fill in the exception information!</string>
+    <string name="toast_information_limit">Input beyond the word limit!</string>
+    <string name="toast_add_poin_point">Please mark the points on the plan!</string>
+    <string name="toast_select_channel_type">Please select the channel type!</string>
+    <string name="toast_acquisition_unit">Please enter the collection unit!</string>
+    <string name="toast_channel_number">Please enter the channel number!</string>
+    <string name="toast_channel_factor">Please enter the magnification factor, not less than 1!</string>
+    <string name="toast_channel_max_range">Please enter the upper limit of acquisition ( 0–99999 ) </string>
+    <string name="toast_channel_min_range">Please enter the lower limit of acquisition ( 0–99999 ) </string>
+    <string name="toast_channel_min_range_greater_max_range">The upper limit of acquisition must be greater than the lower limit of acquisition.</string>
+    <string name="toast_channel_min_alarm_greater_max_alarm">The upper limit of alarm must be greater than the lower limit of alarm.</string>
+    <string name="toast_channel_min_or_max_alarm_wrong">The range of alarm upper and lower limits: 0–99999</string>
+
+    <string name="test_push_msg">Smoke detector fire alarm prompt</string>
+    <string name="fault">Fault</string>
+    <string name="event">Event</string>
+    <string name="alarm">Alarm</string>
+
+    <!-- subtitle -->
+    <string name="title_profile_picture">Profile picture :</string>
+    <string name="title_login_id">Login ID :</string>
+    <string name="title_position">Position :</string>
+    <string name="title_user_name">Username :</string>
+    <string name="title_sex">Sex :</string>
+    <string name="title_birthday">Date Of Birth :</string>
+    <string name="title_mobile_phone">Mobile Phone :</string>
+    <string name="title_email_address">Email Address :</string>
+    <string name="title_copyright_information">Copyright :</string>
+    <string name="title_alert_unit">Fire Unit :</string>
+    <string name="title_alarm_time">Alarm Time :</string>
+    <string name="title_contacts">Contacts :</string>
+    <string name="title_device_name">Device Name :</string>
+    <string name="title_device_code">Device Code :</string>
+    <string name="title_device_status">D-States :</string>
+    <string name="title_device_system">Belong to :</string>
+    <string name="title_device_model">Unit type :</string>
+    <string name="title_gateway_name">Attribution to :</string>
+    <string name="title_affiliated_place">Belongs to place :</string>
+    <string name="title_alarm_state">State of alarm :</string>
+    <string name="title_install_details">Installation Details :</string>
+    <string name="title_start_running_date">Commissioning Date :</string>
+    <string name="title_device_number">Device Number :</string>
+    <string name="title_installation">Installation :</string>
+    <string name="title_validity">Service Deadline :</string>
+    <string name="title_place_name">Place Name :</string>
+    <string name="title_affiliated_unit">Affiliated :</string>
+    <string name="title_address">Address :</string>
+    <string name="title_binding_device">Binding :</string>
+    <string name="title_area_name">Area Name :</string>
+    <string name="title_place_number">Place Number :</string>
+    <string name="title_area_number">Area Number :</string>
+    <string name="title_administrator">Administrator :</string>
+    <string name="title_device_count">Equipment Number :</string>
+    <string name="title_device_video">Video Surveillance :</string>
+    <string name="title_device_channels">Number of channels :</string>
+    <string name="title_device_plan">Device Plan :</string>
+    <string name="title_device_imei">IMEI :</string>
+    <string name="title_offline_online">Offline/Online :</string>
+    <string name="title_note">Postscript :</string>
+    <string name="title_point_entry">Point Entry :</string>
+    <string name="title_fire_count">Number of fire alarm :</string>
+    <string name="title_fire_review_count">Number of review :</string>
+    <string name="title_risk_count">Number of hidden :</string>
+    <string name="title_alarm_false_count">Number of misinformation :</string>
+    <string name="title_number_of_defect">Number of defect :</string>
+    <string name="title_patrol_count">Number of patrol :</string>
+    <string name="title_finish_patrol_count">Number of successful :</string>
+    <string name="title_online_state">Online status :</string>
+    <string name="title_last_connect_time">Last connection time :</string>
+    <string name="title_add_affiliated_unit">Affiliated :(required)</string>
+    <string name="title_add_area_name">Area Name :(required)</string>
+    <string name="title_add_control_limit">Control Limit :(optional)</string>
+    <string name="title_add_administrator_phone">Administrator Phone :(required)</string>
+    <string name="title_add_parent_area">Affiliated Area :(optional)</string>
+    <string name="title_add_place_name">Place Name :(required)</string>
+    <string name="title_add_place_address">Address :(optional)</string>
+    <string name="title_area_level">Area Type :</string>
+    <string name="title_existing_equipment">Existing equipment :</string>
+    <string name="title_add_device_name">Device Name :(required)</string>
+    <string name="title_patrol_indicators">Patrol indicators :</string>
+    <string name="title_patrol_situation">Patrol Situation :</string>
+    <!--客服电话-->
+    <string name="title_hotline_number">Service tel: 4000&#8211;220&#8211;119</string>
+    <string name="title_hotline_operating_hours">Working: 08:30&#8211;17:30 (Monday to Friday)</string>
+
+    <!--StringSelectFragment-->
+    <string name="string_select_title_device_type">Device type</string>
+    <string name="string_select_title_device_mode">Device mode</string>
+    <string name="string_select_title_device_system">Subordinate system</string>
+    <string name="string_select_title_patrol_item_type">Patrol Item Type</string>
+    <string name="string_select_title_facility_type">Facility type</string>
+
+    <string-array name="service_menu">
+        <item>Installation</item>
+        <item>Patrol</item>
+        <item>Video</item>
+        <item>Management</item>
+        <item>Account</item>
+        <item>Records</item>
+        <item>Project</item>
+        <item>Device</item>
+        <item>Problem Report</item>
+        <item>Hidden Danger</item>
+        <item>Maintenance</item>
+        <item>Publicity</item>
+    </string-array>
+    <string name="serview_install_and_maintain">Installation and maintenance</string>
+    <string-array name="ser_install">
+        <item>Area List</item>
+        <item>Place List</item>
+        <item>Device List</item>
+    </string-array>
+    <string name="serview_patrol_and_hidden">Patrol and hidden dangers</string>
+    <string-array name="ser_patrol">
+        <!--<item>Patrol Task</item>-->
+        <item>Patrol Point</item>
+        <item>Task List</item>
+        <item>Hazard Report</item>
+        <item>To do risk</item>
+        <item>Handled Hazards</item>
+    </string-array>
+    <string name="serview_else">Else</string>
+    <string-array name="ser_else">
+        <item>Video Messages</item>
+        <!--<item>Account Management</item>-->
+        <item>Operational log</item>
+        <item>Unit Information</item>
+        <!--<item>Maintenance</item>-->
+        <!--<item>Publicity</item>-->
+    </string-array>
+
+    <string name="string_service_risk_report">Report the hazard</string>
+    <string name="string_service_risk_notice">Hidden details</string>
+    <string name="search_risk_list">Hidden List</string>
+    <!--risk_level_array-->
+    <string name="array_risk_level_1">First-level hidden danger</string>
+    <string name="array_risk_level_2">Second-level hidden danger</string>
+    <string name="array_risk_level_3">Third-level hidden danger</string>
+
+    <!--risk_state_array-->
+    <string name="array_risk_state_no_rectification">No rectification</string>
+    <string name="array_risk_state_rectification">Rectification</string>
+    <string name="array_risk_state_pending_acceptance">Pending Acceptance</string>
+    <string name="array_risk_state_pending_qualified">Pending Qualified</string>
+    <string name="array_risk_state_pending_unqualified">Pending Unqualified</string>
+
+    <string name="string_risk_detail_title">Hidden details</string>
+    <string name="string_risk_report_img">Report picture :</string>
+    <string name="string_risk_report_video">Report video :</string>
+    <string name="string_risk_report_voice">Report voice :</string>
+    <string name="string_risk_implement_user">Implement user :</string>
+    <string name="string_risk_implement_time">Implement time :</string>
+    <string name="string_risk_report_level">Hidden level :</string>
+    <string name="string_risk_report_source">Hidden source :</string>
+    <string name="string_risk_report_user">Reporter :</string>
+    <string name="string_risk_report_time">Report time :</string>
+    <string name="string_risk_notice_existing_problems">Problem：</string>
+    <string name="string_risk_notice_info">After the on-site inspection of the fire safety of %s, your unit has major problems. Restricted to the rectification before %s, and completed the rectification and completion of the “Hidden Danger Rehabilitation Feedback Form” within the %s of the rectification report to the supervisory management personnel.</string>
+    <!--隐患通知书-->
+    <string name="string_risk_to_do_title">Hidden dangers to be done</string>
+    <string name="string_risk_done_title">Hidden dangers has done</string>
+    <string name="string_risk_to_do_detail_title">Details of hidden dangers to be done</string>
+    <string name="string_risk_done_detail_title">Details of hidden dangers has done</string>
+
+    <!--隐患整改进度-->
+    <string name="string_risk_progress_title">Rectification progress</string>
+    <string name="string_risk_progress_detail_title">Rectification detail</string>
+    <string name="string_risk_progress_report_title">Information submission</string>
+    <string name="string_risk_progress_process_user">Executives</string>
+    <string name="string_risk_progress_process_time">Execution time</string>
+    <string name="string_risk_progress_process_description">Problem Description</string>
+
+    <!--隐患上报-->
+    <string name="string_risk_title">Hidden danger</string>
+    <string name="string_risk_description">Hidden danger description :</string>
+    <string name="string_risk_description_hint">Please enter a description of the hidden danger</string>
+    <string name="string_risk_title_input">Hidden danger title :</string>
+    <string name="string_risk_rectification_state">Rectification state :</string>
+    <string name="string_risk_level">Hidden level :</string>
+    <string name="string_risk_project">Hidden unit :</string>
+    <string name="string_risk_address">Hidden address :</string>
+    <string name="string_risk_title_input_hint">Hidden danger title</string>
+    <string name="string_risk_project_hint">Please select the hidden unit</string>
+    <string name="string_risk_address_hint">Please enter the hidden danger address</string>
+    <string name="string_risk_img">Picture</string>
+    <string name="string_risk_video">Video</string>
+    <string name="string_risk_voice">Voice</string>
+
+    <!--隐患搜索-->
+    <string name="string_risk_resource_title">Hidden resource :</string>
+    <string name="string_risk_resource_patrol">Hidden report :</string>
+    <string name="string_risk_resource_supervise">Supervise hidden report :</string>
+    <string name="string_risk_resource_social">Social hidden report :</string>
+
+    <string name="string_risk_state_title">Hidden danger state :</string>
+
+    <!-- statistics -->
+    <string name="fire_alarm_status">Fire statistics</string>
+    <string name="check_fire_alarm">Check to alarm</string>
+    <string name="equipment_failure_analysis">Equipment failure</string>
+    <string name="equipment_type_alarm">Alarm of fire</string>
+    <string name="alarm_false_positives">False alarms</string>
+    <string name="hidden_trouble_statistics">Hidden trouble</string>
+    <string name="inspect_statistical">Patrol analyze</string>
+    <string name="online_analysis">Online analysis</string>
+
+    <string-array name="record_menu">
+        <item>Alarm</item>
+        <item>Warning</item>
+        <item>Fault</item>
+        <item>Incident</item>
+        <item>Trouble</item>
+        <item>Off-line</item>
+    </string-array>
+
+    <string name="picture_preview">Picture Preview</string>
+
+    <!--APP升级-->
+    <string name="dialog_update_now">APP discovers new version</string>
+    <string name="dialog_update_discovers_new_version">Whether to upgrade ?</string>
+    <string name="toast_is_latest_version">Currently the latest version</string>
+
+    <!--文件上传的时候，防止文件未完整上传提示弹窗-->
+    <string name="dialog_file_upload_title">File uploading</string>
+    <string name="dialog_file_upload_content">Files are being uploaded, and submission may result in file upload failure.</string>
+
+    <!--更新服务-->
+    <string name="update_service_begin_update">Start Update</string>
+    <string name="update_service_download_speed_of_progress">Download progress</string>
+    <string name="update_service_download_update_failed_and_download_again">Update failed, please download again</string>
+    <string name="update_service_download_update_failed">Update failed</string>
+    <string name="update_service_download_update_completed">Download completed</string>
+
+    <!--获取通知栏显示权限-->
+    <string name="notification_set_title">Notification permission application</string>
+    <string name="notification_set_content">Need to get notification bar permissions to show you the first time in the event of an alarm</string>
+
+    <!--fire_review_array-->
+    <string name="array_true_fire">Real fire</string>
+    <string name="array_false_fire">False alarm of fire</string>
+    <string name="array_test_fire">Fire warn</string>
+    <string name="array_not_review">No review</string>
+
+    <!--fire_review_count_array-->
+    <string name="array_review_count">Review</string>
+    <string name="array_fire_count">Alarm</string>
+
+    <string name="device_fault_count">AFN</string>
+    <string name="device_misinformation_count">Misinformation</string>
+
+    <!--online_array-->
+    <string name="array_online">Online</string>
+    <string name="array_offline">Offline</string>
+
+    <!--关于APP-->
+    <string name="about_app">About Us</string>
+    <string name="check_new_version">Updates</string>
+    <string name="current_version">Version :</string>
+    <string name="us_info">\u3000\u3000Know eye fire online APP is a high-risk places fire control facilities for monitoring applications, for networking, head of the unit, as well as the subordinate grid (region, place) the wisdom of the head to provide professional, comprehensive fire protection solutions.Can carry on the real-time monitoring to alert status through camera, based on the real situation to review of industry, but also can carry on the supervision report to the hidden trouble.Record the whole process, and can realize fire operations and fire data integration and intelligent analysis.</string>
+
+    <!--搜索页-->
+    <string name="search_hint">Please enter search keyword</string>
+    <string name="device_search_hint">Please enter search keyword</string>
+    <string name="search_place_list">Place List</string>
+    <string name="search_device_list">Device List</string>
+    <string name="search_project_list">Project List</string>
+    <string name="search_area_list">Area List</string>
+    <string name="search_record_list">Log List</string>
+    <string name="search_list">List</string>
+
+    <!--popup-->
+    <string name="popup_album">Album</string>
+
+    <string name="toast_risk_report_data_incomplete">Photos, videos, and voice should be submitted at least one</string>
+
+    <!--span-->
+    <string name="string_space_span">\u3000\u3000%s</string>
+    <string name="toast_logout">Logout and login successful</string>
+</resources>
